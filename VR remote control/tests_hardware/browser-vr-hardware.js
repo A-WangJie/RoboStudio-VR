@@ -1,0 +1,68 @@
+const $=s=>document.querySelector(s),checks=[];
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+const wait=async fn=>{for(let i=0;i<120;i++){if(await fn())return;await pause(50);}throw Error('等待 VR 状态超时：'+$('#vr-hardware-status')?.textContent);};
+const assert=(value,message)=>{if(!value)throw Error(message);checks.push(message);};
+const fixture=async body=>(await fetch('/vr-fixture',body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{})).json();
+const state=async()=>(await fixture()).state;
+const button=action=>$(`[data-page="xr-control"] [data-action="${action}"]`);
+const open=id=>{
+ $('[data-category="control"]').click();$('.function-menu [data-subcategory="xr"]').click();
+ $(`.function-menu [data-function-page="${id}"]`).click();
+};
+const start=async()=>{
+ $('#vr-hardware-confirm').checked=true;$('#vr-hardware-confirm').dispatchEvent(new Event('change'));
+ await wait(()=>!button('vr/enter').disabled);button('vr/enter').click();
+ await wait(async()=>(await state()).active);
+ await wait(async()=>(await state()).phase==='ready'&&!button('simulation/enable').disabled);
+};
+try{
+ await wait(()=>document.body.dataset.workbenchReady==='true'&&$('#loading').hidden&&$('#vr-hardware-arm').options[1].disabled);
+ open('xr-control');assert($('#vr-execution').value==='simulation','启动默认为仿真，不自动选择真机');
+ $('#vr-execution').value='hardware';$('#vr-execution').dispatchEvent(new Event('change'));
+ assert(button('vr/enter').disabled,'进入真机 VR 必须显式确认');
+ assert((await fixture()).writes.length===0,'打开真机选项不发送电机目标');
+ await start();assert(!(await state()).enabled,'进入后到抓取位姿，等待主动启用跟随');
+ await fixture({shortcut:'A'});await wait(async()=>(await state()).enabled);
+ await fixture({right:{grip:1}});await pause(150);
+ for(let i=1;i<=5;i++){await fixture({right:{position:[0,1,.001*i]}});await pause(90);}
+ assert((await state()).sent>0,'A 快捷键启动真机跟随，右握键位移进入同一控制通道');
+ await fixture({right:{grip:0}});await pause(160);
+ const held=(await fixture()).q;await pause(250);
+ assert((await fixture()).q.every((q,i)=>Math.abs(q-held[i])<1e-8),'松开握键撤销远目标，保持实际位置');
+ await fixture({uiInteracting:true});
+ await wait(async()=>(await state()).uiPaused&&$('[data-page="xr-control"] [data-v="mode"]').textContent.includes('会话保留'));
+ assert((await state()).active&&button('vr/enter').disabled&&!$('#vr-hardware-stop').disabled,'RD射线进入面板时暂停运动，VR会话和停止入口保留');
+ assert(button('simulation/enable').disabled&&button('vr/reset').disabled,'操作RD界面时禁止重新启用跟随或复位移动');
+ const uiHeld=(await fixture()).q,uiSent=(await state()).sent;
+ await fixture({right:{grip:1,trigger:1,position:[0,1,.1]}});await pause(300);
+ assert((await fixture()).q.every((q,i)=>Math.abs(q-uiHeld[i])<1e-8)&&(await state()).sent===uiSent,'RD界面操作期间手柄位移、握键和扳机不驱动机械臂');
+ await fixture({uiInteracting:false});await wait(async()=>!(await state()).uiPaused&&!button('simulation/enable').disabled);
+ assert((await state()).active&&!(await state()).enabled,'移开RD射线保留会话，跟随不自动恢复');
+ await fixture({right:{grip:0}});await pause(100);await fixture({shortcut:'A'});
+ await fixture({right:{grip:1}});await pause(150);
+ assert((await state()).enabled&&(await state()).sent===uiSent,'松开握键再按A可在原会话重新锚定，不追赶界面操作期间的旧位移');
+ await fixture({right:{grip:0}});await pause(100);
+ await fixture({shortcut:'B'});assert(!(await state()).enabled,'B 复位到抓取位姿并撤销跟随启用状态');
+ await wait(async()=>(await state()).phase==='ready');
+ open('xr-data');await pause(250);assert((await state()).active,'AR/VR 内切换实时数据页可保留会话');
+ $('[data-category="capture"]').click();$('.function-menu [data-function-page="capture-session"]').click();await pause(250);assert((await state()).active,'进入数据采集页保留 VR 会话');
+ open('xr-control');button('vr/exit').click();await wait(async()=>(await state()).phase==='returning-zero');
+ assert(!(await state()).enabled,'退出真机 VR 先停止跟随，再限速回零');
+ $('#vr-hardware-stop').click();await wait(async()=>!(await state()).active);
+ assert((await fixture()).enabled,'停止按钮可取消回零，电机使能状态不改变');
+ await fixture({resetFixturePose:true});await start();await fixture({right:{tracked:false}});await wait(async()=>!(await state()).active);
+ await fixture({right:{tracked:true}});await pause(250);assert(!(await state()).active,'追踪恢复不自动重启真机控制');
+ await start();window.dispatchEvent(new Event('blur'));await wait(async()=>!(await state()).active);
+ assert(!$('#vr-hardware-confirm').checked,'切出窗口停止真机 VR，再次进入必须确认');
+ await fixture({delayStart:true});$('#vr-hardware-confirm').checked=true;$('#vr-hardware-confirm').dispatchEvent(new Event('change'));
+ await wait(()=>!button('vr/enter').disabled);button('vr/enter').click();await pause(80);$('#joint-tab').click();
+ await pause(1000);assert(!(await state()).active,'进入请求尚未完成时离开页面，也会取消本次接管');
+ open('xr-control');await fixture({delayStart:false});await pause(300);
+ $('#vr-execution').value='simulation';$('#vr-execution').dispatchEvent(new Event('change'));
+ await wait(async()=>!(await state()).selected&&$('#vr-execution').value==='simulation');
+ assert(button('vr/enter').textContent==='进入 VR 模式'&&!$('#vr-gain').disabled,'退出真机后可恢复原仿真模式界面');
+ $('#vr-execution').value='hardware';$('#vr-execution').dispatchEvent(new Event('change'));await start();
+ assert((await fixture()).writes.every(w=>w[1]<=Math.PI/180*3+1e-8&&!Object.hasOwn(w[0],'7')),'所有目标受 3°/s 上限约束，未标定夹爪不下发');
+}catch(error){checks.push('ERROR: '+error.stack);}
+const output=document.createElement('pre');output.id='test-result';output.hidden=true;
+output.textContent=JSON.stringify({ok:!checks.some(c=>c.startsWith('ERROR:')),checks});document.body.append(output);

@@ -1,0 +1,2 @@
+# Meta / Oculus USB devices: allow the active local desktop user to use ADB.
+SUBSYSTEM=="usb", ATTR{idVendor}=="2833", TAG+="uaccess"

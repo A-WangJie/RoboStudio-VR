@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pythonPath": "",
+  "simulation": {
+    "speed_rad_s": 0.6,
+    "ik_position_tolerance_mm": 0.5,
+    "ik_orientation_tolerance_deg": 1.0,
+    "collision_protection": true,
+    "obstacle": false
+  }
+}

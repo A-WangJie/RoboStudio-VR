@@ -1,0 +1,23 @@
+.control-panel .hardware-mouse{border:1px solid #b7c5cf;background:#f2f5f7;padding:9px;margin-bottom:14px;color:#303942;font-size:11px}
+.control-panel .hardware-mouse[hidden]{display:none}
+.control-panel .hardware-mouse-active{border-color:#50946f}
+.control-panel .hardware-mouse .control-heading{margin:0 0 8px}
+.control-panel .hardware-mouse h2{font-size:12px;margin:0}
+.control-panel .hardware-mouse #mouse-hardware-mode{color:#386b55;font-size:10px;white-space:nowrap}
+.control-panel .hardware-mouse label{display:flex;align-items:center;gap:7px;margin:7px 0;line-height:1.7}
+.control-panel .hardware-mouse input[type=number],.control-panel .hardware-mouse select{background:#fff;color:#222;border:1px solid #aab5bf;border-radius:0;min-width:0;width:92px;padding:4px;font-size:11px;margin-left:auto}
+.control-panel .hardware-mouse input[type=checkbox]{flex:none;width:13px;height:13px}
+.control-panel .hardware-mouse details{padding:5px 0;border-bottom:1px solid #ccd4da}
+.control-panel .hardware-mouse summary{cursor:pointer}
+.control-panel .hardware-mouse p{line-height:1.8;margin:7px 0;overflow-wrap:anywhere}
+.control-panel .hardware-mouse .hardware-mouse-note,.control-panel .hardware-mouse details p{font-size:10px;color:#607486}
+.hardware-mouse-actions{display:flex;gap:6px}
+.control-panel .hardware-mouse-actions button{padding:6px 4px;font-size:11px;flex:1;min-width:0}
+.control-panel #mouse-hardware-stop{color:#9b382d}
+.control-panel #mouse-hardware-status{border-left:3px solid #7297b2;padding-left:6px;color:#345b77}
+.control-panel #mouse-hardware-status.result-error{color:#a13227;border-left-color:#b55248}
+.control-panel .joint-preset-actions{display:flex;gap:6px}
+.control-panel .joint-preset-actions .home-button{flex:1;min-width:0;padding:7px 3px;gap:4px;font-size:10px}
+.control-panel .gripper-control-status{font-size:10px;color:#607486;line-height:1.7;margin:8px 0}
+.control-panel .gripper-control-status button{display:block;margin-top:5px;padding:4px 8px;font-size:10px}
+.control-panel #mouse-gripper-apply{padding:5px 8px;font-size:10px;margin:6px 0}

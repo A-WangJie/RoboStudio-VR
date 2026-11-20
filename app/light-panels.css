@@ -1,0 +1,117 @@
+/* Light desktop chrome, matching the existing menu and engineering toolbar. */
+.header,
+.control-dock {
+  --panel: #f7f8fa;
+  --border: #d3dae1;
+  --text: #283b4a;
+  --muted: #627487;
+  --accent: #347eb5;
+  color: var(--text);
+  color-scheme: light;
+}
+.header { background: #f7f7f7; border-bottom-color: #d5d9df; }
+.header .brand strong { color: #263d4e; }
+.header .brand-sub { color: #687b8c; }
+.header .brand-mark { background: #378e9b; color: #fff; border-radius: 5px; }
+.header .workspace-name { color: #506577; }
+.header #workspace-label { color: #314e65; }
+.header .workspace-name span { color: #a3afb9; }
+.header .mode { background: #edf5f2; color: #397364; border-color: #c3dacf; }
+.header .mode i { background: #438d78; }
+.header .version { color: #6d7d8a; }
+
+.control-dock .control-panel { background: #f7f8fa; border-left-color: #cbd3db; }
+.control-panel .panel-title { background: #eef1f4; color: #2b4356; border-bottom-color: #d3dae1; }
+.control-panel .panel-title > span { color: #6a7e8f; }
+.control-panel .control-tabs { background: #f7f8fa; }
+.control-panel button {
+  color: #354e62;
+  background: #f0f3f6;
+  border-color: #cbd4dc;
+  border-radius: 3px;
+}
+.control-panel button:hover { background: #e5eef5; border-color: #8eafc7; }
+.control-panel button:focus-visible,
+.control-panel input:focus-visible,
+.control-panel select:focus-visible,
+.control-panel summary:focus-visible { outline: 2px solid #347eb5; outline-offset: 2px; }
+.control-panel button:disabled,
+.control-panel input:disabled,
+.control-panel select:disabled { opacity: .5; cursor: default; }
+.control-panel .control-tabs button { color: #596e80; background: #fff; }
+.control-panel .control-tabs button[aria-selected=true] { color: #245c87; background: #dfeef9; border-color: #8db4d2; }
+.control-panel .control-content { scrollbar-color: #b4c0ca #edf0f3; }
+.control-panel .eyebrow { color: #62788a; }
+.control-panel .control-heading h2 { color: #293e50; }
+.control-panel .unit-tag { color: #5a7184; border-color: #c6d0d9; background: #f1f4f7; }
+.control-panel .joint-badge { color: #536c80; background: #edf2f6; border-color: #c6d2dc; }
+.control-panel .joint-name { color: #536b7d; }
+.control-panel .joint-input { background: #fff; border-color: #becbd6; border-radius: 3px; }
+.control-panel .joint-input:focus-within { border-color: #3981b7; }
+.control-panel .joint-input input { color: #294c67; }
+.control-panel .joint-input span { color: #6e8394; }
+.control-panel .range-limits { color: #64798b; }
+.control-panel input[type=range] { background: linear-gradient(to right, #5a90b8 var(--fill), #d3dce4 var(--fill)); }
+.control-panel input[type=range]::-webkit-slider-thumb { background: #fff; border-color: #fff; box-shadow: 0 0 0 1px #5784a6; }
+.control-panel input[type=range]::-moz-range-thumb { background: #fff; border-color: #fff; box-shadow: 0 0 0 1px #5784a6; }
+.control-panel .gripper-value output { color: #315b73; }
+.control-panel .gripper-value output span,
+.control-panel .gripper-value > span,
+.control-panel .gripper-icon { color: #627c8e; }
+.control-panel .gripper-actions button.active { color: #245c87; border-color: #8db4d2; background: #dfeef9; }
+.control-panel .joint-control.tree-highlight { outline-color: #86b0cf; background: #e4f0f8; }
+.control-panel .pose-note,
+.control-panel .pose-help,
+.control-panel .check-row { color: #5b7183; }
+.control-panel .pose-grid label { color: #4f6980; }
+.control-panel .pose-grid input,
+.control-panel .simulation-panel select,
+.control-panel .drag-options select { background: #fff; border-color: #becbd6; color: #294c67; border-radius: 3px; }
+.control-panel .primary-button { background: #397dac; border-color: #33719d; color: #fff; }
+.control-panel .primary-button:hover { background: #2c6894; border-color: #285d84; }
+.control-panel .drag-options button[aria-pressed=true] { background: #fff0d9; border-color: #d2ac6d; color: #825919; }
+.control-panel #pose-result,
+.control-panel .collision-status { color: #356b56; background: #edf5ef; border-color: #bfd6c6; }
+.control-panel #pose-result.result-error,
+.control-panel .collision-status.collision-alert { color: #994b3c; background: #fff1ed; border-color: #dfb8ae; }
+.control-panel .simulation-heading strong { color: #3e5e72; }
+.control-panel .backend-badge { color: #8b682d; background: #fff6e5; border-color: #ddcda7; }
+.control-panel .backend-badge.connected { color: #397159; background: #edf5ef; border-color: #bdd4c5; }
+.control-panel .sim-label,
+.control-panel .simulation-stats,
+.control-panel #simulation-message { color: #5b7387; }
+.control-panel .inspector-section > summary { color: #354f63; }
+.control-panel .inspector-section > summary::marker { color: #6e8395; }
+.control-panel .tree-selection strong { color: #385d79; }
+.control-panel .tree-selection p,
+.control-panel .model-info p,
+.control-panel .model-info dt { color: #61778a; }
+.control-panel .model-info h2,
+.control-panel .model-info dd { color: #344f64; }
+.control-panel .model-source { color: #537965; }
+.control-panel .model-source .source-dot { background: #4c8c71; }
+.control-panel .phase-note,
+.control-panel .phase-note span,
+.control-panel .control-footnote { color: #637a8c; }
+.control-panel .small-circle { border-color: #8b9eac; }
+.control-drawer-toggle { color: #47647b; background: #f0f3f6; border-color: #bac8d3; box-shadow: -2px 2px 4px #23394a0d; }
+.control-drawer-toggle:hover { color: #245c87; background: #dfebf5; border-color: #8eafc7; }
+.hide-control-panel .control-dock { background: #eef1f4; border-left-color: #cbd3db; }
+.control-panel #activity-list li { color: #415e74; }
+.control-panel #activity-list time { color: #6c8192; }
+.control-panel #activity-list .event-error { color: #a34d3b; }
+.control-panel .activity-heading small { color: #687d8e; }
+.control-panel .dialog-note,
+.control-panel .help-dialog p { color: #536c80; }
+.control-panel .help-dialog .dialog-note { color: #886526; }
+.control-panel .dialog-heading small { color: #3b779e; }
+.control-panel .dialog-heading button { color: #607689; }
+.control-panel .setting-field { border-color: #d3dae1; }
+.control-panel .setting-field small,
+.control-panel .setting-field > span:last-child { color: #61788c; }
+.control-panel .setting-field input { background: #fff; color: #294c67; border-color: #becbd6; }
+.control-panel .settings-location,
+.control-panel .settings-location small { color: #61788c; }
+.control-panel .settings-location code { color: #38566d; }
+.control-panel #settings-result { color: #a34d3b; }
+.control-panel .dialog-actions { border-color: #d3dae1; }

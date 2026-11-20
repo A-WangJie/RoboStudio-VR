@@ -1,0 +1,49 @@
+.workbench-toolbar .tool-group[hidden], .control-tabs[hidden], .function-page[hidden], .function-menu[hidden], .control-footnote[hidden], .phase-note[hidden], .sim-actions[hidden], #simulation-reset[hidden] { display:none; }
+.function-category { display:flex; align-items:center; gap:6px; height:32px; padding:2px 8px; margin:0 2px; color:#35475a; background:transparent; border:1px solid transparent; border-radius:2px; white-space:nowrap; font-size:12px; }
+.function-category svg { width:26px; height:26px; }
+.function-category:hover, .function-category[aria-expanded=true] { background:#e0edf8; border-color:#8eafcc; }
+.category-arrow { color:#485b6c; font-size:11px; margin-left:3px; }
+.function-menu { position:fixed; z-index:100; width:252px; padding:5px; background:#fafbfd; color:#2d4053; border:1px solid #9aabba; box-shadow:0 5px 15px #172a3d40; border-radius:3px; }
+.function-menu { width:278px; overflow-y:auto; overscroll-behavior:contain; }
+.function-menu .function-subcategory { display:flex; align-items:center; justify-content:space-between; font-weight:600; }
+.function-subcategory[aria-expanded=true] { background:#edf3f8; }
+.function-subcategory[aria-expanded=true] .submenu-arrow { transform:rotate(90deg); }
+.function-submenu { margin:2px 4px 5px 14px; padding-left:6px; border-left:1px solid #bdcbd7; }
+.function-submenu[hidden] { display:none; }
+.function-menu .function-submenu button { font-size:11px; padding:8px 9px; }
+.function-menu button { display:block; width:100%; padding:9px 12px; border:1px solid transparent; background:transparent; color:inherit; text-align:left; font-size:12px; border-radius:2px; }
+.function-menu button:hover, .function-menu button:focus { background:#e0edf8; border-color:#adc5dc; outline:none; }
+.function-menu button[aria-current=true] { color:#14608e; font-weight:600; }
+.function-page .gripper-section { border:0; border-top:1px solid var(--border); padding-top:16px; margin-top:16px; }
+.function-page .inspector-section { margin:0; border:0; }
+.function-page .model-details > summary { display:none; }
+.function-page .activity-panel { height:auto; min-height:300px; border:0; background:transparent; }
+.function-page #activity-list { height:auto; max-height:none; padding:8px 0; }
+.function-page #activity-list li { display:block; margin-bottom:10px; overflow-wrap:anywhere; }
+.function-page #activity-list time { margin-right:8px; }
+.function-page .activity-heading { flex-wrap:wrap; padding:0 0 8px; }
+.function-page dialog { position:static; width:100%; max-width:none; margin:0; padding:0; border:0; border-radius:0; box-shadow:none; background:transparent; color:inherit; }
+.function-page dialog:not([open]) { display:none; }
+.function-page .setting-field { flex-direction:column; align-items:stretch; gap:8px; }
+.function-page .settings-location { font-size:10px; }
+.function-page .settings-location code { word-break:break-all; }
+.function-page .dialog-heading h2 { font-size:16px; }
+.function-page .page-sim-actions { display:flex; gap:5px; margin:10px 0 16px; }
+.page-sim-actions button { flex:1; font-size:10px; padding:7px 2px; }
+.function-page .simulation-panel { padding:0; }
+
+.simulation-split { display:flex; align-items:center; margin:0 2px; }
+.simulation-split .function-category { margin:0; }
+.simulation-primary { border-radius:2px 0 0 2px; padding-right:5px; }
+.simulation-dropdown { padding:2px 5px; border-radius:0 2px 2px 0; }
+.simulation-dropdown .category-arrow { margin:0; }
+.simulation-split:hover { background:#e0edf8; }
+.function-menu [role=menuitemradio][aria-checked=true]::before { content:'✓ '; }
+
+/* Authoritative action buttons may remain in the DOM without occupying toolbar space. */
+.workbench-toolbar .tool-button[hidden] { display:none !important; }
+.shortcut-context-menu { position:fixed; z-index:150; min-width:240px; max-width:calc(100vw - 8px); padding:5px; background:#fafbfd; color:#2d4053; color-scheme:light; border:1px solid #9aabba; border-radius:2px; box-shadow:0 4px 12px #172a3d40; font-size:12px; }
+.shortcut-context-menu[hidden] { display:none; }
+.shortcut-context-label { padding:5px 10px 7px; color:#617385; border-bottom:1px solid #d9e1e7; font-size:11px; }
+.shortcut-context-menu button { display:block; width:100%; margin-top:3px; padding:8px 10px; border:1px solid transparent; border-radius:2px; color:inherit; background:transparent; text-align:left; font-size:12px; }
+.shortcut-context-menu button:hover, .shortcut-context-menu button:focus { background:#e0edf8; border-color:#adc5dc; outline:none; }

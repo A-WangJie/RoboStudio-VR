@@ -1,0 +1,21 @@
+{
+  "upstream": "https://github.com/YHRG-Robotics/S1_SDK_V2",
+  "upstream_reference_commit": "1c7b26f37288d37853eac2ece78ae69db4a7d701",
+  "reference_commit_status": "reference only; fresh upstream native build not yet tested",
+  "origin": "DK-authored local SDK extensions, extracted without changing the working SDK",
+  "license": "MIT; repository root LICENSE",
+  "files": [
+    {
+      "file": "safe_can.py",
+      "sha256": "7198798a0a2ca81bf397083c4c238b5f762015d72f5edf33b87bf1bcaaa81729"
+    },
+    {
+      "file": "device_session.py",
+      "sha256": "3482c733053f7d480090b5e6775b30e681f78fefa290e10728f37c4c28cecbb5"
+    },
+    {
+      "file": "native_session.py",
+      "sha256": "dbb9fdd4d3043087671fd662c9e4cb743117e8788659c6ac275f0b7efd190921"
+    }
+  ]
+}

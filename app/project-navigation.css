@@ -1,0 +1,83 @@
+/* Project navigation only; the existing viewport, materials and property theme stay in style.css. */
+.workbench-toolbar { height: 42px; padding: 4px 10px; overflow-x: auto; }
+.workbench-toolbar .tool-group { gap: 2px; padding: 0 8px; flex-shrink: 0; }
+.workbench-toolbar .tool-group:first-child { padding-left: 0; }
+.workbench-toolbar .tool-button { width: 30px; min-width: 30px; height: 30px; padding: 4px; justify-content: center; border-radius: 2px; }
+.workbench-toolbar .tool-button svg, .project-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.icon-face { fill: currentColor; fill-opacity: .17; }
+.icon-solid { fill: currentColor; stroke: none; }
+.workbench-toolbar .icon-new, .project-icon.icon-new { color: #a7c9ee; }
+.workbench-toolbar .icon-open { color: #d8b875; }
+.workbench-toolbar .icon-save, .workbench-toolbar .icon-fit { color: #8bbcea; }
+.workbench-toolbar .icon-iso, .workbench-toolbar .icon-front, .workbench-toolbar .icon-side, .workbench-toolbar .icon-top { color: #75c9d1; }
+.workbench-toolbar .icon-robot, .project-icon.icon-robot { color: #afbecd; }
+.workbench-toolbar .icon-target, .project-icon.icon-target { color: #8aca9b; }
+.workbench-toolbar .icon-gripper, .project-icon.icon-gripper { color: #d7c08d; }
+.workbench-toolbar .icon-move { color: #8db9e9; }
+.workbench-toolbar .icon-rotate { color: #dd9f8b; }
+.workbench-toolbar .icon-home { color: #a7b9ca; }
+.workbench-toolbar .icon-play { color: #7ee1b4; }
+.workbench-toolbar .icon-pause { color: #e9b56f; }
+.workbench-toolbar .icon-reset { color: #d69588; }
+.workbench-toolbar .icon-help { color: #8eb9e6; }
+.workbench-toolbar .tool-button.active, .workbench-toolbar .tool-button[aria-pressed=true] { border-color: #5b7e9d; background: #30475c; }
+.workbench-toolbar .tool-button[aria-pressed=false] { opacity: .75; }
+.workbench-toolbar .tool-button:disabled { opacity: .3; }
+.viewport-toolbar[hidden] { display: none; }
+.workbench-engine { font-size: 9px; }
+#workspace-label { font-weight: 500; color: #c1cedc; }
+
+.workspace { grid-template-columns: 278px minmax(300px, 1fr) 310px; }
+.scene-panel .scene-tree { padding: 12px 7px 0; }
+#project-tree, #project-tree ul { list-style: none; padding: 0; margin: 0; }
+#project-tree { font-size: 11px; color: #b6c2d0; }
+#project-tree ul { margin-left: 13px; padding-left: 7px; border-left: 1px solid #48525e; }
+#project-tree [hidden] { display: none; }
+.project-item { position: relative; outline: none; }
+.project-row { display: flex; align-items: center; gap: 5px; min-height: 29px; padding: 2px 4px 2px 0; cursor: default; border: 1px solid transparent; position: relative; }
+#project-tree ul > .project-item > .project-row::before { content: ''; position: absolute; width: 8px; left: -8px; top: 13px; border-top: 1px solid #48525e; }
+.project-row:hover { background: #25313d; }
+.project-item[aria-selected=true] > .project-row { background: linear-gradient(90deg, #294b6b, #34445e); border-color: #4e6b8d; color: #edf4fc; }
+.project-item:focus-visible > .project-row { outline: 1px solid #8ab2d5; outline-offset: -2px; }
+.project-toggle { width: 15px; height: 22px; display: grid; place-items: center; flex: none; }
+.project-item[aria-expanded] > .project-row > .project-toggle { cursor: pointer; }
+.project-item[aria-expanded] > .project-row > .project-toggle::before { content: ''; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid #bdcbd9; }
+.project-item[aria-expanded=true] > .project-row > .project-toggle::before { transform: rotate(90deg); }
+.project-item[aria-expanded] > .project-row > .project-toggle:hover { background: #779bc340; }
+.project-icon { display: inline-flex; width: 17px; height: 20px; align-items: center; flex: none; color: #94a9bf; }
+.project-icon svg { width: 17px; height: 17px; }
+.project-icon.icon-joint { color: #86a9c5; }
+.project-icon.icon-grid { color: #a69f89; }
+.project-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.6; }
+.tree-selection { margin: 15px 6px 0; border-top: 1px solid #303a47; padding: 10px 4px 2px; min-height: 78px; }
+.tree-selection strong { display: block; color: #a4b9ce; font-size: 10px; font-weight: 500; overflow-wrap: anywhere; }
+.tree-selection p { margin: 5px 0 0; color: #7f90a5; font-size: 10px; line-height: 1.8; }
+.scene-panel .model-details { margin: 0; padding: 12px 18px; }
+.joint-control.tree-highlight { outline: 1px solid #587e9e; outline-offset: 5px; background: #263648; }
+@media (max-width: 1200px) { .workspace { grid-template-columns: 260px minmax(280px, 1fr) 290px; }.workbench-toolbar .tool-group { padding: 0 5px; } }
+@media (max-width: 850px) { .workspace { grid-template-columns: minmax(260px, 1fr) 270px; } }
+@media (max-width: 580px) { .workspace { display: flex; }.workbench-toolbar { flex-shrink: 0; } }
+
+/* Classic light command strip with full-color shaded engineering symbols. */
+.workbench-toolbar { background: #fff; border-top: 1px solid #e6e8eb; border-bottom: 1px solid #aeb8c3; color-scheme: light; }
+.workbench-toolbar .tool-group { border-right-color: #c5cbd2; }
+.workbench-toolbar .tool-button { width: 32px; min-width: 32px; height: 32px; padding: 2px; background: transparent; }
+.workbench-toolbar .tool-button .engineering-icon { width: 27px; height: 27px; stroke: none; fill: none; filter: drop-shadow(0 1px .5px #1b34422c); }
+.workbench-toolbar .tool-button:hover { background: #edf5fc; border-color: #a7c1d8; }
+.workbench-toolbar .tool-button.active, .workbench-toolbar .tool-button[aria-pressed=true] { background: #dcecf9; border-color: #7ca7ca; box-shadow: inset 0 0 0 1px #f6fbff; }
+.workbench-toolbar .tool-button[aria-pressed=false] { opacity: 1; }
+.workbench-toolbar .tool-button:disabled { opacity: .35; filter: grayscale(.7); }
+.workbench-toolbar .tool-button:focus-visible { outline-color: #3175ad; outline-offset: 0; }
+.workbench-toolbar .workbench-engine { color: #586e80; }
+
+.desktop-menubar { display: flex; align-items: center; flex: none; height: 30px; padding: 0 5px; background: #f7f7f7; border-bottom: 1px solid #d5d9df; color-scheme: light; }
+.desktop-menubar[hidden] { display: none; }
+.desktop-menubar button { border: 1px solid transparent; border-radius: 2px; background: transparent; color: #30353c; font-size: 13px; padding: 3px 7px; height: 27px; }
+.desktop-menubar button:hover, .desktop-menubar button[aria-expanded=true] { background: #dcecf9; border-color: #9cbad3; }
+.desktop-menubar button:focus-visible { outline: 1px solid #3175ad; outline-offset: -2px; }
+
+/* Light simulation world; labels must remain readable over its pale background. */
+#viewport { background: #d5e1e8; }
+.viewport-heading h1 { color: #4d5863; }
+.viewport-heading h1 span, .viewport-heading .eyebrow { color: #74808a; }
+.mouse-hint, .view-corner small { color: #65737e; }

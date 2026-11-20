@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11151b">
+  <title>RoboStudio</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./workbench.css">
+  <link rel="stylesheet" href="./project-navigation.css">
+  <link rel="stylesheet" href="./workspace-layout.css">
+  <link rel="stylesheet" href="./light-panels.css">
+  <link rel="stylesheet" href="./function-pages.css">
+  <link rel="stylesheet" href="./arm-config.css">
+  <link rel="stylesheet" href="./titlebar.css">
+  <link rel="stylesheet" href="./property-panel.css">
+  <link rel="stylesheet" href="./hardware-mouse.css">
+  <link rel="stylesheet" href="./startup.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  <link rel="stylesheet" href="/vr-ui/panels.css">
+</head>
+<body class="studio-starting" aria-busy="true">
+  <div id="loading" role="status"><div class="startup-wordmark" aria-hidden="true">Robo<span>Studio</span></div><span class="spinner cube-stage" aria-hidden="true"><span class="cube-hop"><span class="loading-cube"><i class="cube-face cube-front"></i><i class="cube-face cube-back"></i><i class="cube-face cube-left"></i><i class="cube-face cube-right"></i><i class="cube-face cube-top"></i><i class="cube-face cube-bottom"></i></span></span><span class="cube-shadow"></span></span><strong id="loading-title">正在加载 S1 模型</strong><span id="loading-message">载入网格与关节结构…</span><details id="error-details" hidden><summary>查看原始错误</summary><pre id="error-diagnostic"></pre></details></div>
+  <script src="./js/titlebar.js"></script>
+  <nav id="desktop-menubar" class="desktop-menubar" aria-label="应用菜单" hidden></nav>
+  <nav id="workbench-toolbar" class="workbench-toolbar" aria-label="工作台工具栏"></nav>
+  <main class="workspace">
+    <aside class="scene-panel">
+      <div class="panel-title">项目 <span>PROJECT</span></div>
+      <section class="simulation-panel" aria-label="MuJoCo 仿真控制">
+        <div class="simulation-heading"><strong>MuJoCo</strong><span id="backend-state" class="backend-badge">正在连接</span></div>
+        <label class="sim-label">仿真模式<select id="simulation-mode" disabled><option value="kinematic">运动学 · 位姿验证</option><option value="dynamic">动力学 · 重力与力矩</option></select></label>
+        <div class="sim-actions"><button id="simulation-run" disabled>开始仿真</button><button id="simulation-pause" disabled>暂停</button></div>
+        <button id="simulation-reset" disabled>重置仿真</button>
+        <label class="check-row"><input id="collision-protection" type="checkbox" checked disabled>碰撞拦截</label>
+        <label class="check-row"><input id="obstacle-enabled" type="checkbox" disabled>显示测试障碍物</label>
+        <div id="collision-state" class="collision-status" role="status">等待后端</div>
+        <div class="simulation-stats"><span>时间 <output id="simulation-time">0.00</output> s</span><span id="simulation-running">未连接</span></div>
+        <p id="simulation-message" role="status">后端就绪后可使用末端位姿和碰撞检测。</p>
+      </section><div class="scene-tree">
+        <ul id="project-tree" role="tree" aria-label="RoboDK 项目对象"></ul>
+        <div class="tree-selection"><strong id="tree-selection-name">S1 V1</strong><p id="tree-selection-description"></p></div>
+      </div>
+      <details class="model-details"><summary>模型信息</summary><div class="model-info"><span class="eyebrow">当前模型</span><h2>S1 V1</h2><p>六轴机械臂 · 平行夹爪</p><dl><div><dt>旋转关节</dt><dd>6</dd></div><div><dt>夹爪控制</dt><dd>独立 · 双指联动</dd></div><div><dt>长度单位</dt><dd>mm</dd></div><div><dt>角度单位</dt><dd>deg</dd></div></dl><div class="model-source"><span class="source-dot"></span>本地 SDK 模型</div></div>
+      </details><div class="phase-note"><span>02 / 末端遥控</span><p>位姿目标 → 逆解 → 碰撞检查 → 仿真。</p></div>
+    </aside>
+    <section class="viewport-panel" aria-label="机械臂三维视图">
+      <div class="viewport-toolbar"><div class="view-presets" role="group" aria-label="视角"><button data-view="iso" class="active">透视</button><button data-view="front">正视</button><button data-view="side">侧视</button><button data-view="top">俯视</button></div><div class="view-options"><button id="grid-toggle" aria-pressed="false" title="显示或隐藏网格">▦ <span>网格</span></button><button id="axes-toggle" aria-pressed="true" title="显示或隐藏坐标轴">⌖ <span>坐标轴</span></button><span class="toolbar-separator"></span><button id="fit-view" title="将机械臂完整放入视野">⊡ <span>适应视图</span></button></div></div>
+      <aside id="render-warning" class="render-warning" role="status" hidden><strong>Canvas 降级模式</strong><p>WebGL2 上下文创建失败，已切换到 CPU 兼容渲染。复杂模型可能更卡顿，地面倒影不可用，阴影与光照效果受限。</p><details><summary>查看原因与排查方法</summary><p>请在 Google Chrome 的 chrome://gpu 查看图形诊断，并检查浏览器图形加速设置和驱动。以下信息只说明上下文创建失败，不能单独确定驱动或浏览器不支持。</p><pre id="render-diagnostic"></pre></details></aside><div id="viewport"><div class="viewport-heading"><span class="eyebrow">LIVE VIEWPORT</span><h1>S1 V1 <span>/ 数字模型</span></h1></div></div>
+      <div class="readout"><div class="readout-label"><i></i><span>末端参考点<small>基座坐标 / mm</small></span></div><div class="coordinate"><span class="axis-x">X</span><output id="tip-x">—</output></div><div class="coordinate"><span class="axis-y">Y</span><output id="tip-y">—</output></div><div class="coordinate"><span class="axis-z">Z</span><output id="tip-z">—</output></div><span class="readout-note">模型参考位置</span></div>
+    </section>
+    <aside class="control-panel">
+      <div class="panel-title">机械臂控制 <span>CONTROL</span></div>
+      <div class="control-tabs" role="tablist" aria-label="控制方式"><button id="joint-tab" role="tab" aria-selected="true" aria-controls="joint-panel">关节控制</button><button id="pose-tab" role="tab" aria-selected="false" aria-controls="pose-panel">末端位姿</button></div><div class="control-content"><div id="joint-panel" role="tabpanel" aria-labelledby="joint-tab"><div class="control-heading"><div><span class="eyebrow">JOINT POSITION</span><h2>关节位置</h2></div><span class="unit-tag">DEG</span></div><div id="joint-controls"></div><div class="joint-preset-actions"><button id="home-pose" class="home-button" title="六关节归零；真机模式按当前速度上限执行">↶ <span>恢复初始姿态</span></button><button id="vr-grab-pose" class="home-button" title="移动到 VR 抓取姿态，不切换控制模式">⌁ <span>VR 抓取姿态</span></button></div>
+      </div><section id="pose-panel" role="tabpanel" aria-labelledby="pose-tab" hidden>
+        <div class="control-heading"><div><span class="eyebrow">CARTESIAN TARGET</span><h2>末端目标位姿</h2></div><span class="unit-tag">BASE</span></div>
+        <p class="pose-note">基座坐标系 · 位置 mm / 姿态 deg</p>
+        <div class="pose-grid">
+          <label>X<input id="pose-x" type="number" step="1" value="0" aria-label="目标 X 毫米"></label>
+          <label>Y<input id="pose-y" type="number" step="1" value="0" aria-label="目标 Y 毫米"></label>
+          <label>Z<input id="pose-z" type="number" step="1" value="0" aria-label="目标 Z 毫米"></label>
+          <label>Roll<input id="pose-roll" type="number" step="1" value="0" aria-label="目标 Roll 角度"></label>
+          <label>Pitch<input id="pose-pitch" type="number" step="1" value="0" aria-label="目标 Pitch 角度"></label>
+          <label>Yaw<input id="pose-yaw" type="number" step="1" value="0" aria-label="目标 Yaw 角度"></label>
+        </div>
+        <label class="check-row"><input id="position-only" type="checkbox">仅位置，允许姿态自动调整</label>
+        <div class="pose-actions"><button id="pose-sync">读取当前位姿</button><button id="pose-apply" class="primary-button">求解并应用</button></div>
+        <div class="pose-divider"></div><span class="eyebrow">三维拖拽</span>
+        <div class="drag-options"><button id="drag-toggle" aria-pressed="false">开启末端拖拽</button><select id="drag-mode" aria-label="末端拖拽模式"><option value="translate">平移</option><option value="rotate">旋转</option><option value="follow">长跟随</option></select></div>
+        <div id="follow-options" hidden>
+          <label class="follow-behavior">跟随方式<select id="follow-behavior"><option value="hold">按住左键持续拖拽</option><option value="continuous">点击后持续跟随鼠标</option></select></label>
+          <div class="follow-speed">
+            <label for="follow-scale">跟随映射速度比例</label><output id="follow-scale-value" for="follow-scale">30%</output>
+            <input id="follow-scale" type="range" min="5" max="100" step="5" value="30" aria-describedby="follow-scale-help">
+            <div class="range-limits"><span>5% · 精细</span><span>100% · 原速</span></div>
+          </div>
+          <p id="follow-scale-help" class="pose-note">比例越低，同样鼠标移动对应的末端位移越小。此比例不代替真机速度上限。</p>
+          <p id="follow-state" role="status">长跟随未开启</p><p class="pose-note">在三维视图区开始，按当前视角平面移动。持续跟随时再次点击或按 Esc 停止；移出视图区、切换窗口时停止。</p>
+        </div>
+        <p id="drag-help" class="pose-note">平移 / 旋转：拖动彩色手柄。长跟随：在视图区左键开始，无需抓住手柄。开启末端拖拽时，滚轮上滚张开夹爪、下滚闭合；关闭后恢复视角缩放。不可达或碰撞时保留有效姿态。</p>
+        <div id="pose-result" role="status">等待 MuJoCo 后端</div>
+        <details class="pose-help"><summary>坐标与 TCP 说明</summary><p>姿态按 Rz(Yaw) · Ry(Pitch) · Rx(Roll) 组合。接口使用米和 xyzw 四元数。当前 TCP 为模型参考点，尚未做真机标定。</p></details>
+      </section><section class="gripper-section"><div class="control-heading"><div><span class="eyebrow">END EFFECTOR</span><h2>夹爪开合</h2></div><span class="gripper-icon">⊔</span></div><div class="gripper-value"><output id="gripper-output">40<span>%</span></output><span id="gripper-travel">单指位移 20.0 mm</span></div><input id="gripper-slider" type="range" min="0" max="100" step="1" value="40" aria-label="夹爪开合百分比"><div class="range-limits"><span>闭合</span><span>张开</span></div><div class="gripper-actions"><button data-gripper="0">闭合</button><button data-gripper="50">半开</button><button data-gripper="100">张开</button></div></section>
+      <div class="control-footnote"><span class="small-circle">i</span><p>拖动滑块实时调整数字模型。<br>启用后端后执行离散路径碰撞检查。</p></div></div>
+    </aside>
+  </main>
+  <footer class="statusbar"><span><i id="status-dot"></i><span id="status-text" role="status">正在准备场景</span></span><span>场景单位 m <b>·</b> 界面显示 mm / deg</span><span>S1 STUDIO <b>·</b> 末端控制与仿真</span></footer>
+  <script src="./js/startup.js"></script>
+</body>
+</html>

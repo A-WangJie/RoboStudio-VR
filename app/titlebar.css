@@ -1,0 +1,44 @@
+#app-titlebar {
+  height: 38px;
+  min-height: 38px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d5d9df;
+  color: #304957;
+  color-scheme: light;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+#app-titlebar .wordmark {
+  font: italic 700 23px/1 "DejaVu Sans", "Segoe UI", sans-serif;
+  letter-spacing: -1.2px;
+  background: transparent;
+  white-space: nowrap;
+  padding-right: 5px;
+}
+#app-titlebar .wordmark span { color: #d6a400; font-weight: 400; letter-spacing: -1.1px; }
+#app-titlebar .window-controls { display: flex; align-self: stretch; -webkit-app-region: no-drag; }
+#app-titlebar .window-controls[hidden] { display: none; }
+#app-titlebar button {
+  width: 44px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #566772;
+  cursor: default;
+}
+#app-titlebar button svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1; }
+#app-titlebar button:hover { background: #e3e8ec; color: #253e50; }
+#app-titlebar button[data-window-action=close]:hover { background: #c94646; color: #fff; }
+#app-titlebar button:focus-visible { outline: 2px solid #347eb5; outline-offset: -3px; }
+#app-titlebar .restore-symbol { display: none; }
+#app-titlebar[data-maximized=true] .maximize-symbol { display: none; }
+#app-titlebar[data-maximized=true] .restore-symbol { display: block; }

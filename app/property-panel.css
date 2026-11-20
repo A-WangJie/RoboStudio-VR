@@ -1,0 +1,94 @@
+/* Docked engineering property editor; scope all changes to the right drawer. */
+.control-dock {
+  --panel: #f0f0f0;
+  --border: #bfc3c7;
+  --text: #252525;
+  --muted: #60656a;
+  font-family: 'Segoe UI', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+}
+body .control-dock .control-panel { background: #f0f0f0; color: #252525; }
+.control-panel > .panel-title {
+  height: 30px; padding: 0 10px; background: linear-gradient(#fafafa, #dedfe1);
+  color: #252525; border-bottom: 1px solid #b6bbc0; font-size: 12px;
+}
+.control-panel .control-content { padding: 10px; scrollbar-color: #b5b5b5 #ededed; }
+.control-panel .control-heading,
+.control-panel .simulation-heading,
+.control-panel .dialog-heading,
+.control-panel .activity-heading {
+  min-height: 28px; margin: 0 0 10px; padding: 5px 8px;
+  background: #dedfe1; border: 1px solid #c2c5c8; border-radius: 0;
+}
+.control-panel .control-heading h2,
+.control-panel .dialog-heading h2,
+.control-panel .simulation-heading strong { margin: 0; color: #292929; font-family: inherit; font-weight: 600; font-size: 12px; line-height: 1.5; letter-spacing: 0; }
+.control-panel .control-heading .eyebrow,
+.control-panel .dialog-heading small,
+.control-panel .gripper-icon { display: none; }
+.control-panel .unit-tag { border: 0; background: transparent; color: #585d61; padding: 0; font-size: 10px; }
+.control-panel button,
+.control-panel .pose-grid input,
+.control-panel .joint-input,
+.control-panel select,
+.control-panel .setting-field input { border-radius: 0; border: 1px solid #aeb3b8; box-shadow: none; }
+.control-panel button { min-height: 27px; padding: 4px 8px; background: linear-gradient(#fff, #e5e5e5); color: #292929; font-size: 11px; }
+.control-panel button:hover { border-color: #6c98bb; background: #e6f0f8; }
+.control-panel button:active { background: #d4e5f3; }
+.control-panel button:focus-visible,
+.control-panel input:focus-visible,
+.control-panel select:focus-visible,
+.control-panel summary:focus-visible { outline: 1px solid #397eaf; outline-offset: 1px; }
+.control-panel .primary-button { color: #17496b; border-color: #6b99ba; background: linear-gradient(#f7fbff, #dceaf6); font-weight: 600; }
+.control-panel .primary-button:hover { background: #cfe3f3; color: #17496b; }
+.control-panel .pose-note { margin: 8px 0 10px; font-size: 11px; line-height: 1.6; color: #626262; }
+.control-panel .pose-grid { grid-template-columns: 1fr; gap: 5px; margin: 10px 0; }
+.control-panel .pose-grid label { display: grid; grid-template-columns: 70px minmax(0, 1fr); align-items: center; color: #303030; font-family: inherit; font-size: 11px; line-height: 1.5; }
+.control-panel .pose-grid input { margin: 0; height: 26px; padding: 3px 6px; background: #fff; color: #202020; text-align: right; font-size: 12px; }
+.control-panel .check-row { color: #363636; font-size: 11px; gap: 6px; margin: 10px 0; }
+.control-panel .pose-actions { gap: 6px; }
+.control-panel .pose-divider { margin: 14px 0 0; border: 0; }
+.control-panel #pose-panel > .eyebrow { display: block; padding: 5px 8px; border: 1px solid #c2c5c8; background: #dedfe1; color: #292929; font: 600 12px/1.5 'Segoe UI', 'Noto Sans CJK SC', sans-serif; letter-spacing: 0; }
+.control-panel .drag-options { gap: 6px; margin: 9px 0; }
+.control-panel .drag-options select,
+.control-panel .simulation-panel select { padding: 3px 6px; min-height: 27px; color: #252525; background: #fff; font-size: 11px; }
+.control-panel .drag-options button[aria-pressed=true],
+.control-panel .gripper-actions button.active { color: #17496b; background: #dceaf6; border-color: #6b99ba; }
+.control-panel #pose-result,
+.control-panel .collision-status { border-radius: 0; padding: 7px 8px; border: 1px solid #bacabd; border-left: 3px solid #568563; background: #f5f8f4; color: #36563d; font-size: 11px; line-height: 1.6; }
+.control-panel #pose-result.result-error,
+.control-panel .collision-status.collision-alert { border-color: #c89c92; border-left-color: #ad4939; background: #fff3ef; color: #8b3528; }
+.control-panel .pose-help { margin-top: 12px; color: #555; font-size: 11px; line-height: 1.6; }
+.control-panel .pose-help summary { padding: 5px 7px; background: #e3e4e5; border-top: 1px solid #c2c5c8; border-bottom: 1px solid #c2c5c8; color: #333; }
+.control-panel .joint-control { padding: 4px 0 7px; margin: 0 0 5px; border-bottom: 1px solid #d8d8d8; }
+.control-panel .joint-name { color: #333; font-size: 11px; }
+.control-panel .joint-badge { border: 0; border-radius: 0; background: transparent; color: #555; }
+.control-panel .joint-input { background: #fff; }
+.control-panel .joint-input input { color: #202020; }
+.control-panel input[type=range] { height: 3px; border: 1px solid #b5b8bb; border-radius: 0; background: #d7dadd; }
+.control-panel input[type=range]::-webkit-slider-thumb { width: 9px; height: 14px; border: 1px solid #7d8c98; border-radius: 1px; background: linear-gradient(#fff, #cfd7dd); box-shadow: none; }
+.control-panel input[type=range]::-moz-range-thumb { width: 7px; height: 12px; border: 1px solid #7d8c98; border-radius: 1px; background: #dce3e8; box-shadow: none; }
+.control-panel .range-limits { color: #666; font-size: 9px; }
+.control-panel .home-button { margin-top: 8px; }
+.control-panel .function-page .gripper-section { border: 0; margin-top: 14px; padding-top: 0; }
+.control-panel .gripper-value { margin: 10px 0 14px; }
+.control-panel .gripper-value output { font-size: 19px; color: #303030; }
+.control-panel .gripper-value > span { color: #606060; font-size: 10px; }
+.control-panel .gripper-actions { gap: 6px; margin-top: 10px; }
+.control-panel .setting-field { padding: 8px 0; }
+.control-panel .function-page .setting-field { gap: 5px; }
+.control-panel .function-page .model-info { margin-top: 0; }
+.control-panel .model-info h2 { font-size: 15px; margin: 8px 0; letter-spacing: 0; }
+.control-panel .model-info dl div { margin: 0; padding: 8px 4px; border-bottom: 1px solid #d2d2d2; font-size: 11px; }
+.control-panel .model-info dt { color: #555; }
+.control-panel .model-info dd { color: #252525; }
+.control-panel .function-page #activity-list li { margin: 0; padding: 7px 4px; border-bottom: 1px solid #d2d2d2; font-size: 11px; }
+.control-drawer-toggle { border-radius: 0; background: linear-gradient(to right, #f8f8f8, #dedfe1); border-color: #aeb3b8; color: #414950; box-shadow: none; }
+.control-panel #follow-options[hidden] { display: none; }
+.control-panel #follow-options { border: 1px solid #bdcbd7; background: #f1f5f8; padding: 9px; margin: 8px 0; }
+.control-panel .follow-behavior { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: #34566f; }
+.control-panel #follow-behavior { width: 100%; min-width: 0; padding: 6px; border: 1px solid #bdcbd7; background: #fff; color: #304e64; font-size: 11px; }
+.control-panel #follow-state { margin: 9px 0 0; color: #17628c; font-size: 11px; }
+.control-panel .follow-speed { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px 8px; margin-top: 12px; color: #34566f; font-size: 11px; }
+.control-panel #follow-scale-value { font-variant-numeric: tabular-nums; color: #17628c; }
+.control-panel #follow-scale,
+.control-panel .follow-speed .range-limits { grid-column: 1 / -1; width: 100%; margin: 0; }

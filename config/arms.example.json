@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "model": "s1_v1",
+  "connection": {
+    "layout": "auto",
+    "autoDetect": true,
+    "timeoutMs": 2000
+  },
+  "arms": [
+    {
+      "id": "A",
+      "label": "机械臂 A",
+      "device": "can0",
+      "bitrate": null,
+      "endEffector": "gripper",
+      "checkCollision": true,
+      "resetDegrees": null,
+      "resetSpeed": 5,
+      "arSource": "unassigned",
+      "positionScale": 1,
+      "basePose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tcpOffset": [
+        0,
+        0,
+        0
+      ],
+      "calibrationConfirmed": false
+    },
+    {
+      "id": "B",
+      "label": "机械臂 B",
+      "device": "can1",
+      "bitrate": null,
+      "endEffector": "gripper",
+      "checkCollision": true,
+      "resetDegrees": null,
+      "resetSpeed": 5,
+      "arSource": "unassigned",
+      "positionScale": 1,
+      "basePose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tcpOffset": [
+        0,
+        0,
+        0
+      ],
+      "calibrationConfirmed": false
+    }
+  ],
+  "teaching": {
+    "rateHz": 30,
+    "timeoutMs": 250,
+    "gripper": true,
+    "holdToEnable": true,
+    "pairs": [
+      {
+        "follower": "A",
+        "enabled": true,
+        "leader": {
+          "label": "主臂 A",
+          "device": "",
+          "bitrate": null
+        },
+        "direction": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offsetDegrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "alignmentConfirmed": false
+      },
+      {
+        "follower": "B",
+        "enabled": true,
+        "leader": {
+          "label": "主臂 B",
+          "device": "",
+          "bitrate": null
+        },
+        "direction": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offsetDegrees": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "alignmentConfirmed": false
+      }
+    ]
+  },
+  "startup": {
+    "readState": true,
+    "checkLimits": true,
+    "requireEnable": true
+  },
+  "ar": {
+    "holdToEnable": true,
+    "timeoutMs": 500,
+    "connection": {
+      "device": "quest",
+      "transport": "wifi",
+      "host": "",
+      "port": 8766,
+      "serial": "",
+      "autoReconnect": false
+    }
+  }
+}

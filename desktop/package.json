@@ -1,0 +1,8 @@
+{
+  "name": "s1-studio",
+  "productName": "S1 Studio",
+  "version": "0.3.0",
+  "private": true,
+  "main": "main.cjs",
+  "description": "S1 V1 机械臂工作台"
+}

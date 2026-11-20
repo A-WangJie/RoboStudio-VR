@@ -1,0 +1,65 @@
+.arm-config-page { font-size: 11px; color: #3d566b; }
+.arm-page-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.arm-page-heading h2 { font-size: 15px; font-weight: 500; margin: 2px 0 12px; }
+.arm-offline { font-size: 9px; color: #82642e; border: 1px solid #dacaab; padding: 3px 6px; background: #fff8eb; white-space: nowrap; }
+.arm-intro, .arm-note { line-height: 1.8; font-size: 10px; color: #647789; margin: 8px 0 14px; }
+.arm-detection { display: flex; flex-direction: column; gap: 9px; background: #edf2f6; border: 1px solid #d0dbe4; padding: 12px; margin: 16px 0; }
+.arm-detection strong { font-size: 12px; font-weight: 500; }
+.arm-detection span, .arm-detection small { font-size: 10px; color: #6a7f90; }
+.arm-detection button { padding: 7px; margin-top: 3px; font-size: 11px; }
+.arm-field { display: flex; flex-direction: column; gap: 7px; margin: 14px 0; min-width: 0; }
+.arm-field > span { display: flex; justify-content: space-between; gap: 5px; }
+.arm-field small { font-size: 9px; color: #718495; font-weight: normal; }
+.control-panel .arm-field input, .control-panel .arm-field select { width: 100%; min-width: 0; height: 31px; padding: 5px 7px; border: 1px solid #bdcbd7; border-radius: 3px; background: #fff; color: #304e64; font: 11px var(--mono); }
+.arm-field input::placeholder { color: #8a98a5; }
+.arm-spec { margin: 20px 0; border-top: 1px solid #d4dce3; }
+.arm-spec > div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e0e5eb; }
+.arm-spec dt { color: #6c8092; }.arm-spec dd { margin: 0; }
+.arm-device { min-width: 0; border: 0; border-top: 1px solid #cbd6df; padding: 3px 0 12px; margin: 24px 0 0; }
+.arm-device legend { padding: 0 9px 0 0; font-size: 12px; font-weight: 600; }
+.arm-device legend small { display: inline; color: #7a8a98; font-size: 9px; font-weight: 400; margin-left: 6px; }
+.arm-device.arm-inactive { opacity: .5; }
+.arm-device h3 { font-size: 11px; font-weight: 500; margin: 12px 0 0; }
+.arm-device h3 small { font-size: 9px; color: #6a7f90; float: right; }
+.arm-joint-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0 8px; }
+.arm-joint-grid .arm-field { margin: 10px 0 5px; }
+.arm-joint-grid .arm-field > span { flex-direction: column; gap: 4px; }
+.arm-operation-grid, .arm-config-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+.arm-operation-grid button, .arm-config-actions button { flex: 1 1 40%; padding: 8px 5px; font-size: 10px; }
+.arm-section { border-top: 1px solid #d4dce3; margin-top: 16px; padding-top: 12px; }
+.arm-section summary, .arm-reference summary { cursor: pointer; color: #3e617d; font-size: 11px; }
+.arm-reference { font-size: 10px; line-height: 1.8; margin: 18px 0; }
+.arm-reference code { overflow-wrap: anywhere; font: 9px/1.7 var(--mono); }
+.arm-steps { padding-left: 18px; font-size: 10px; line-height: 2; color: #6b8091; }
+.arm-config-footer { border-top: 1px solid #cbd6df; padding-top: 12px; margin-top: 22px; }
+.arm-save-state { color: #476d87; line-height: 1.8; font-size: 10px; }.arm-save-state.error { color: #a34535; }
+.arm-save-path { display: block; overflow-wrap: anywhere; font-size: 9px; color: #7a8c9c; line-height: 1.7; margin-top: 12px; }
+.control-panel .arm-revert { display: block; background: none; border: 0; font-size: 10px; padding: 8px 0 0; color: #647b8f; }
+.arm-readiness { padding-left: 15px; font-size: 9px; line-height: 1.9; color: #8b713d; }
+.teaching-channel-summary { border: 1px solid #ccd8e1; background: #f3f6f8; padding: 4px 10px; margin: 12px 0; line-height: 1.8; overflow-wrap: anywhere; }
+.teaching-muted { color: #81909e; }
+.teaching-formula { border-left: 3px solid #6b95b1; padding: 8px 10px; background: #edf3f7; line-height: 1.8; }
+.teaching-mapping-grid { display: grid; grid-template-columns: 30px minmax(65px,1.2fr) minmax(45px,1fr) minmax(55px,1fr); gap: 7px 5px; align-items: center; margin: 14px 0; }
+.teaching-mapping-grid > span { font-size: 10px; color: #6a7f90; }
+.teaching-mapping-grid strong { font: 11px var(--mono); }
+.control-panel .teaching-mapping-grid input, .control-panel .teaching-mapping-grid select { width: 100%; min-width: 0; height: 29px; padding: 3px; background: #fff; color: #304e64; border: 1px solid #bdcbd7; border-radius: 2px; font: 11px var(--mono); }
+.teaching-preview-result { display: block; white-space: pre-line; padding: 10px; margin-top: 12px; background: #edf4f0; border: 1px solid #bdd1c4; font: 10px/1.8 var(--mono); overflow-wrap: anywhere; }
+.teaching-preview-result.error { color: #984333; background: #fff1ec; border-color: #d8b0a5; }
+.hardware-interface-list { border-top: 1px solid #cbd6df; padding: 10px 0; font-size: 11px; }
+.hardware-interface { display: flex; flex-direction: column; gap: 4px; padding: 8px; margin: 8px 0; background: #f0f4f7; border: 1px solid #d2dde5; }
+.hardware-interface small, .hardware-arm-status, .hardware-preflight { white-space: pre-line; line-height: 1.8; overflow-wrap: anywhere; font-size: 10px; }
+.hardware-arm-status { margin: 9px 0; padding: 8px; border-left: 3px solid #a3b4c1; background: #edf2f6; }
+.hardware-ok { color: #247047 !important; }
+.hardware-arm-status.hardware-ok { border-color: #40865f; background: #edf5ef; }
+.hardware-preflight { padding: 10px; border: 1px solid #cbd6df; background: #f1f5f8; }
+[data-hardware-action] { padding: 7px; font-size: 10px; }
+.hardware-operation-message { padding: 9px; margin: 12px 0; background: #edf2f6; border-left: 3px solid #8aa6bb; font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.hardware-operation-message.error, .hardware-state-fault { color: #a34535; }
+.hardware-state table { width: 100%; border-collapse: collapse; font: 10px var(--mono); }
+.hardware-state th, .hardware-state td { padding: 7px 4px; text-align: left; border-bottom: 1px solid #d0dbe4; }
+.hardware-state th { background: #e5ecf1; font-weight: 500; }
+.hardware-state-heading { font-size: 10px; line-height: 1.7; }
+.hardware-state-stale table { opacity: .6; }
+.hardware-state details { margin-top: 10px; font-size: 10px; }
+.hardware-state summary { cursor: pointer; }
+.hardware-state pre { font: 9px/1.8 var(--mono); white-space: pre-wrap; }

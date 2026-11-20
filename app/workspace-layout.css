@@ -1,0 +1,205 @@
+/* Keep diagnostic elements available to status updates without displaying labels. */
+#workbench-engine, #viewport .viewport-heading, body .readout .statusbar { display: none; }
+
+/* The viewport owns the whole left area; only tree rows intercept its pointer input. */
+body { min-height: 420px; height: 100dvh; overflow: hidden; }
+body .workspace, body.hide-scene-panel .workspace {
+  --drawer-width: 310px;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--drawer-width);
+  overflow: hidden;
+  min-width: 0;
+}
+body.hide-control-panel .workspace, body.hide-scene-panel.hide-control-panel .workspace { grid-template-columns: minmax(0, 1fr) 30px; }
+body .workspace > .viewport-panel { min-width: 0; min-height: 0; height: auto; }
+body #viewport { min-height: 0; }
+body .scene-panel {
+  position: absolute;
+  inset: 12px auto auto 10px;
+  width: 278px;
+  max-width: calc(100% - 46px);
+  max-height: calc(100% - 72px);
+  display: flex;
+  z-index: 1;
+  background: transparent;
+  border: 0;
+  pointer-events: none;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #6b80905c transparent;
+}
+body.hide-scene-panel .scene-panel { display: none; }
+body .scene-panel .scene-tree { display: block; padding: 0 6px 8px 0; }
+/* Traditional feature-tree typography and selection; no full-width cards. */
+#project-tree {
+  color: #202a31;
+  font: 12px/1.3 "Segoe UI", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  text-shadow: none;
+  user-select: none;
+}
+#project-tree ul { margin-left: 8px; padding-left: 9px; border-left: 1px dotted #78858d80; }
+#project-tree ul > .project-item > .project-row::before {
+  width: 9px; left: -10px; top: 10px; border-top: 1px dotted #78858d80;
+}
+#project-tree .project-row {
+  width: fit-content;
+  max-width: 100%;
+  height: 23px;
+  min-height: 23px;
+  padding: 0;
+  gap: 3px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  pointer-events: auto;
+  color: inherit;
+}
+#project-tree .project-label {
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  line-height: 16px;
+}
+#project-tree .project-row:hover .project-label { background: #e7f0f57a; }
+#project-tree .project-item[aria-current=page] > .project-row .project-label { background:#e2eff9; color:#205c89; border-color:#91b3cd; font-weight:600; }
+#project-tree .project-item[data-node=project-file] > .project-row .project-label { font-weight:600; }
+.tree-selection p { white-space:pre-line; overflow-wrap:anywhere; }
+#project-tree .project-item[aria-selected=true] > .project-row .project-label {
+  background: #3478b4;
+  border-color: #2a6599;
+  color: white;
+}
+#project-tree .project-item:focus-visible > .project-row { outline: none; }
+#project-tree .project-item:focus-visible > .project-row .project-label {
+  outline: 1px dotted #183a55;
+  outline-offset: -2px;
+}
+#project-tree .project-toggle {
+  position: relative;
+  width: 16px;
+  height: 21px;
+  flex: none;
+}
+#project-tree .project-item[aria-expanded] > .project-row > .project-toggle::before {
+  content: '';
+  position: absolute;
+  width: 9px; height: 9px;
+  left: 3px; top: 6px;
+  box-sizing: border-box;
+  border: 1px solid #74818a;
+  background: #e4e8e9;
+  transform: none;
+}
+#project-tree .project-item[aria-expanded] > .project-row > .project-toggle::after {
+  content: '';
+  position: absolute;
+  width: 5px; height: 5px;
+  left: 5px; top: 8px;
+  background: linear-gradient(#3f4d56, #3f4d56) center / 5px 1px no-repeat;
+}
+#project-tree .project-item[aria-expanded=false] > .project-row > .project-toggle::after {
+  background: linear-gradient(#3f4d56, #3f4d56) center / 5px 1px no-repeat,
+              linear-gradient(#3f4d56, #3f4d56) center / 1px 5px no-repeat;
+}
+#project-tree .project-item[aria-expanded] > .project-row > .project-toggle:hover { background: transparent; }
+#project-tree .project-icon { width: 18px; height: 18px; filter: none; }
+#project-tree .project-icon svg { width: 18px; height: 18px; stroke: none; fill: none; }
+.viewport-heading { left: auto; right: 44px; top: 18px; text-align: right; }
+.viewport-heading h1 { margin-top: 7px; }
+.view-corner { bottom: 18px; right: 18px; }
+.mouse-hint { bottom: 20px; }
+
+/* A docked drawer expands the canvas when closed, with an always-accessible handle. */
+.control-dock { position: relative; min-width: 0; min-height: 0; z-index: 3; }
+body .control-dock .control-panel { width: 100%; height: 100%; min-height: 0; border-top: 0; }
+.control-drawer-toggle {
+  position: absolute;
+  top: 12px;
+  right: 100%;
+  width: 26px;
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 4px;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+  border-color: #465362;
+  background: #202a35;
+  color: #bfd0de;
+  box-shadow: -2px 2px 5px #17233014;
+}
+.control-drawer-toggle span { writing-mode: vertical-rl; font-size: 11px; letter-spacing: 3px; }
+.control-drawer-toggle svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.control-drawer-toggle:hover { background: #354758; color: #fff; }
+.hide-control-panel .control-dock { background: #191e26; border-left: 1px solid var(--border); }
+.hide-control-panel .control-drawer-toggle { right: 0; width: 30px; border: 0; border-radius: 0; box-shadow: none; }
+.hide-control-panel .control-drawer-toggle svg { transform: rotate(180deg); }
+.control-content { flex: 1; min-height: 0; overscroll-behavior: contain; padding: 18px 20px; }
+.control-content .inspector-section { border-top: 1px solid var(--border); margin-top: 22px; padding: 0; font-size: 11px; }
+.inspector-section > summary { padding: 15px 0; cursor: pointer; color: #c0cedc; }
+.inspector-section > summary::marker { color: #7f94a7; }
+.control-content .simulation-panel { display: block; padding: 2px 0 0; border: 0; }
+.control-content .model-info { margin: 16px 0 0; }
+.control-content .tree-selection { margin: 0; padding: 0 0 12px; border: 0; min-height: 0; }
+.control-content .phase-note { margin: 18px 0 0; padding: 15px 0 0; border-top: 1px solid var(--border); }
+.control-content .phase-note p { margin-bottom: 0; }
+
+/* One light, full-width bottom strip, matching the menu strip's 30px height. */
+body > .readout {
+  height: 30px;
+  min-height: 30px;
+  width: 100%;
+  padding: 0 14px;
+  gap: 22px;
+  justify-content: flex-start;
+  background: #f7f7f7;
+  border-top: 1px solid #c8d0d8;
+  color: #33485a;
+  color-scheme: light;
+  overflow: hidden;
+}
+.readout .readout-label { display: flex; flex: none; gap: 7px; color: #405569; font-size: 11px; }
+.readout .readout-label > span { display: flex; gap: 8px; align-items: center; }
+.readout .readout-label small { display: inline; margin: 0; color: #7b8792; font-size: 10px; }
+.readout .readout-label i { width: 6px; height: 6px; border-color: #298b78; }
+.readout .coordinate { flex-direction: row; align-items: baseline; gap: 8px; min-width: 76px; flex: none; }
+.readout .coordinate > span { font-size: 10px; font-weight: 600; }
+.readout .coordinate output { font-size: 12px; color: #233e55; min-width: 54px; font-variant-numeric: tabular-nums; }
+.readout .axis-x { color: #b55351; }
+.readout .axis-y { color: #32805a; }
+.readout .axis-z { color: #3b72aa; }
+.readout .readout-note { display: none; }
+.readout .statusbar { margin-left: auto; padding: 0 0 0 16px; height: 17px; min-width: 0; background: none; border: 0; border-left: 1px solid #d5dbe1; color: #637587; }
+.readout .statusbar > span:first-child { min-width: 0; }
+.readout .statusbar > span:not(:first-child) { display: none; }
+.readout .statusbar i { flex: none; background: #309f87; }
+#status-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+@media (max-width: 1100px) {
+  body .workspace { --drawer-width: 290px; }
+  body .scene-panel { width: 250px; }
+  .viewport-heading { display: none; }
+  body > .readout { gap: 15px; }
+}
+@media (max-width: 700px) {
+  body .workspace { --drawer-width: 270px; }
+  body .scene-panel { width: 215px; left: 6px; }
+  #project-tree { font-size: 11px; }
+  .readout .readout-label small { display: none; }
+  .readout .coordinate { min-width: 67px; gap: 5px; }
+  body > .readout { gap: 10px; padding: 0 9px; }
+  .readout .statusbar { padding-left: 8px; }
+  .mouse-hint { display: none; }
+}
+@media (max-width: 580px) {
+  body .workspace, body.hide-scene-panel .workspace { grid-template-columns: minmax(0, 1fr) 30px; }
+  body .control-dock .control-panel { position: absolute; right: 0; width: min(290px, calc(100vw - 36px)); box-shadow: -8px 0 24px #10203026; }
+  .control-drawer-toggle { right: min(290px, calc(100vw - 36px)); }
+  #joint-controls { display: block; }
+  .joint-name { display: inline; }
+  .readout .readout-label { font-size: 10px; }
+  .readout .statusbar { display: none; }
+}

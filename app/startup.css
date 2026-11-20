@@ -1,0 +1,43 @@
+/* Keep layout measurable behind the startup surface, without flashing old chrome. */
+body.studio-starting { background: #f7f7f7; }
+body.studio-starting > :not(#app-titlebar):not(#loading):not(script) { visibility: hidden; }
+body.studio-starting #app-titlebar { position: relative; z-index: 10001; }
+body > #loading {
+  position: fixed; inset: 38px 0 0; z-index: 10000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 18px; padding: 32px; overflow: auto;
+  background: #f7f7f7; color: #304957; color-scheme: light;
+  font: 13px/1.7 'DejaVu Sans', 'Microsoft YaHei', sans-serif;
+}
+body > #loading[hidden] { display: none; }
+#loading .startup-wordmark { font: italic 700 36px/1.3 'DejaVu Sans', sans-serif; letter-spacing: -1.8px; margin-bottom: 12px; }
+#loading .startup-wordmark span { color: #d6a400; font-weight: 400; }
+#loading .spinner { width: 24px; height: 24px; border: 2px solid #dce1e5; border-top-color: #d6a400; border-radius: 50%; animation: startup-spin 1s linear infinite; }
+#loading .spinner[hidden] { display: none; }
+#loading #loading-title { font-size: 13px; font-weight: 500; }
+#loading #loading-message { color: #627487; font-size: 12px; text-align: center; max-width: 600px; }
+#loading #error-details { width: min(650px, 92%); color: #627487; }
+#loading #error-diagnostic { background: #edf0f2; color: #304957; }
+@keyframes startup-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { #loading .spinner { animation: none; } }
+/* Rounded, substantial frame with an open center and visible rear edges. */
+#loading .cube-stage { position: relative; display: block; width: 130px; height: 112px; border: 0; border-radius: 0; animation: none; perspective: 420px; }
+.cube-hop { position: absolute; left: 39px; top: 32px; width: 52px; height: 52px; transform-style: preserve-3d; animation: cube-hop 2.4s ease-in-out infinite; }
+.loading-cube { display: block; width: 52px; height: 52px; transform-style: preserve-3d; transform: rotateX(-24deg) rotateY(35deg); animation: cube-turn 4.8s ease-in-out infinite; }
+.cube-face { position: absolute; inset: 0; box-sizing: border-box; border: 4px solid #607985; border-radius: 7px; background: transparent; box-shadow: inset 0 1px 1px #ffffff80; backface-visibility: visible; }
+.cube-front { transform: translateZ(26px); }
+.cube-back { transform: rotateY(180deg) translateZ(26px); }
+.cube-left { transform: rotateY(-90deg) translateZ(26px); border-color: #78909b; }
+.cube-right { transform: rotateY(90deg) translateZ(26px); border-color: #526e7c; }
+.cube-top { transform: rotateX(90deg) translateZ(26px); border-color: #b4a164; }
+.cube-bottom { transform: rotateX(-90deg) translateZ(26px); }
+.cube-shadow { position: absolute; bottom: 4px; left: 37px; width: 56px; height: 7px; border-radius: 50%; background: #30495720; filter: blur(3px); animation: cube-shadow 2.4s ease-in-out infinite; }
+@keyframes cube-hop { 0%,100% { transform: translate3d(-9px,8px,0); } 48% { transform: translate3d(9px,-17px,12px); } }
+@keyframes cube-turn { 0% { transform: rotateX(-24deg) rotateY(35deg) rotateZ(0); } 50% { transform: rotateX(66deg) rotateY(125deg) rotateZ(-12deg); } 100% { transform: rotateX(156deg) rotateY(215deg) rotateZ(0); } }
+@keyframes cube-shadow { 0%,100% { transform: translateX(-9px) scale(1); opacity: .8; } 48% { transform: translateX(9px) scale(.65); opacity: .35; } }
+body > #loading { opacity: 1; transition: opacity 280ms ease; }
+body.studio-revealing > #loading { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  #loading .cube-hop, #loading .loading-cube, #loading .cube-shadow { animation: none; }
+  body > #loading { transition: none; }
+}

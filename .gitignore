@@ -1,0 +1,36 @@
+# Device settings, user state, captures and build output
+/.local/
+/artifacts/
+/var/
+/tmp_numcai/
+/recordings/
+/Gallery/
+/workspaces/
+/dist/
+/build/
+/.venv/
+/.env
+/.env.*
+!/.env.example
+/S1 Studio.desktop
+/config/*.json
+!/config/*.example.json
+/config/*.lock
+/config/*.tmp
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+# Electron sources and its pinned runtime manifest are public; runtime is local
+/desktop/runtime/
+/desktop/node_modules/
+# Historical notes and generated images/reports are retained locally
+/docs/history/
+*.apk
+*.aab
+*.keystore
+*.jks
+# RD has its own nested .gitignore for Unity caches and local configuration
+
+# Obtain SDK models locally; redistribution review pending
+/app/assets/s1_v1/

@@ -1,0 +1,46 @@
+# Local device state, captures, backups and build output
+/.local/
+/artifacts/
+/builds/
+/backups/
+/recordings/
+/tools/python/
+/tools/*.deb
+/config/connection.json
+/config/wireless-adb.json
+/config/*.lock
+/config/*.tmp
+/.env
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/dist/
+*.apk
+*.aab
+*.symbols.zip
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+# Keep Unity sources and GUID metadata; never commit editor-generated files
+/QuestControllerClient/[Ll]ibrary/
+/QuestControllerClient/[Tt]emp/
+/QuestControllerClient/[Oo]bj/
+/QuestControllerClient/[Ll]ogs/
+/QuestControllerClient/[Uu]ser[Ss]ettings/
+/QuestControllerClient/[Bb]uilds/
+/QuestControllerClient/.utmp/
+/QuestControllerClient/.vs/
+/QuestControllerClient/.idea/
+/QuestControllerClient/*.csproj
+/QuestControllerClient/*.sln
+/QuestControllerClient/Assets/_Recovery/
+/QuestControllerClient/Assets/_Recovery.meta
+/QuestControllerClient/Assets/XR/Temp/
+/QuestControllerClient/Assets/XR/Temp.meta
+*.keystore
+*.jks
+.DS_Store
+
+# Development notebooks/screenshots may contain workstation or device details
+/docs/history/
+/docs/previews/
