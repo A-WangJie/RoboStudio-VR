@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10446,
-      "sha256": "e2aa33a57bac39d81845864a09f81a12a75b01339e712833b4de355769538e8b"
+      "bytes": 10609,
+      "sha256": "d698310ccb744af3e36fef0666b1491478aee394105f29f2be2fcb4b04b86eac"
     },
     {
       "path": "S1Studio",
@@ -1394,8 +1394,8 @@
     },
     {
       "path": "docs/images/README.md",
-      "bytes": 872,
-      "sha256": "af3b8f449677b61a7026ce9843e1601112dd06d3ab1447805d5322168073982a"
+      "bytes": 898,
+      "sha256": "20a309469732f9931eed614d8f37ad671843310480aa4077a83ff3edf60e2d5c"
     },
     {
       "path": "docs/images/badge-0.svg",
@@ -1434,8 +1434,8 @@
     },
     {
       "path": "docs/images/full-workflow-poster.jpg",
-      "bytes": 35653,
-      "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
+      "bytes": 35037,
+      "sha256": "c57fb5ecd9d77e58e232677be8d4f3ae632acd48ce2ebfdaf2d6470bda71f08f"
     },
     {
       "path": "docs/images/rd-panel.png",
@@ -1519,18 +1519,18 @@
     },
     {
       "path": "docs/videos/README.md",
-      "bytes": 252,
-      "sha256": "2d65a75dfe69264c77321b7cb627ab6ba2cf37316927775963b39ff7e1eee36d"
+      "bytes": 375,
+      "sha256": "d090b00e597c1f373e38364d00302803a78718d4e1cd6945edff8fa11d76e9d3"
     },
     {
       "path": "docs/videos/robostudio-vr-full-workflow.mp4",
-      "bytes": 3097645,
-      "sha256": "7a198c72e0b4187435e2dd37b3ef5222ab2907a872e49c4c0a271c0f6dda090e"
+      "bytes": 2189788,
+      "sha256": "e56cc7f2ac2a2e837611227406403c7c2423d04eb9eb97c8e40ab38eb63861d0"
     },
     {
       "path": "docs/videos/video-manifest.json",
-      "bytes": 504,
-      "sha256": "edb0815294ca1d9041a23aeb77600285d2661e5be499676c3f840a2313b3a08c"
+      "bytes": 713,
+      "sha256": "f48197dec02311ca1a0850fd034b55a4db6ee146465aa324ab87f0c18b2dc911"
     },
     {
       "path": "docs/vr-hardware-follow-tuning-20261119.md",
@@ -1814,11 +1814,11 @@
     },
     {
       "path": "docs/images/robostudio-workflow-loop.webp",
-      "bytes": 6912250,
-      "sha256": "300982bd9543936fa22f3ecdd54d511a5a99265fe5333c62c99059792c7e7dbb"
+      "bytes": 4352032,
+      "sha256": "accf1874571dc520b9ebe488aa00e0a8770926b14eb0b5d0be0d246bcb258aef"
     }
   ],
-  "totalBytes": 30120999,
+  "totalBytes": 26652829,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }
