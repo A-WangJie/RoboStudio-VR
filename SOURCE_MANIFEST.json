@@ -1729,8 +1729,8 @@
     },
     {
       "path": "docs/images/README.md",
-      "bytes": 676,
-      "sha256": "32905e97aa3b42317c3b1f3b7a54b1615c285348c3bee0254c62abc14c31cade"
+      "bytes": 713,
+      "sha256": "b14c5462066c96197cdc5ffacee38521f1c377413344e4e5432e6e1ae3d9fb65"
     },
     {
       "path": "docs/images/rd-panel.png",
@@ -1739,13 +1739,13 @@
     },
     {
       "path": "docs/images/robostudio-banner.png",
-      "bytes": 138428,
-      "sha256": "9537adb80d3b19861cbeea36fdea5800c504348ac5db95df05c3ae9067c95642"
+      "bytes": 107365,
+      "sha256": "4847a7381bcb5eb9f0623f6d840bd1a77a159dc8d25533d203b7f5a0ebd2c78b"
     },
     {
       "path": "docs/images/robostudio-banner.svg",
-      "bytes": 5752,
-      "sha256": "35e954817a812e3f2f01f463f9692aabb3a2d56b3117af9eda0d81ecadc7f345"
+      "bytes": 4595,
+      "sha256": "3377c3453bc5fde317b817235edb83a3508773554a96800589a94c2a0cb94a60"
     },
     {
       "path": "docs/images/rs-workbench.png",
@@ -1773,7 +1773,7 @@
       "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
     }
   ],
-  "totalBytes": 23235158,
+  "totalBytes": 23202975,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }
