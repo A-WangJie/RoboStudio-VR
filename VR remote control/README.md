@@ -56,7 +56,7 @@ bash scripts/build-quest.sh
 
 ## 源码发布
 
-该目录是 DK 仓库中的 RD 模块。Git 分支属于整个仓库；若后续建立 `rd` 分支，它仍包含 DK 工程，不等于把一个目录变成分支。本次只整理本地模块，没有初始化仓库、创建分支或上传。
+该目录是 DK 仓库中的 RD 模块。Git 分支属于整个仓库；若后续建立 `rd` 分支，它仍包含 DK 工程，不等于把一个目录变成分支。RS 与 RD 在 [RoboStudio-VR](https://github.com/A-WangJie/RoboStudio-VR) 同一仓库维护。
 
 生成可审核的 RD 源码副本：
 
@@ -66,7 +66,7 @@ python3 scripts/export-source.py --output /tmp/robodata-source
 
 导出只包含明确列出的源码、Unity 资源、配置示例及文档；排除设备地址、配对码、采集数据、缓存、APK、安装包和本地备份，并移除导出副本中的 Unity Cloud 账号绑定。本地工程和本地 Cloud 设置保持原样。APK 建议作为 GitHub Releases 附件发布。
 
-开源许可证尚未由项目所有者选定，本次没有擅自授予许可证。正式公开前需在 DK 仓库根目录确定 `LICENSE`；第三方条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+RD 自有代码采用仓库根目录 [MIT 许可证](../LICENSE)；第三方条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 - [架构与模块边界](docs/architecture.md)
 - [连接及环境变量](docs/configuration.md)

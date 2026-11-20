@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 5606,
-      "sha256": "db96beea9a254b28dac8dfd43db5408097ba7603d8130f23f1c9ff81aeda4651"
+      "bytes": 8511,
+      "sha256": "707e90cdefa4fd57930d4fc853e18df5ac7a3475fecb6d348379f21d27c2b2c8"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -779,8 +779,8 @@
     },
     {
       "path": "VR remote control/README.md",
-      "bytes": 4536,
-      "sha256": "60cca5c8bfabf777ffd38808ce525475e6e0606bd785f5446ba368f50e20e670"
+      "bytes": 4477,
+      "sha256": "d514fe8fda18930d62d651776c105e66e0ef1dde30f1de12fdd34226b05010fe"
     },
     {
       "path": "VR remote control/CONTRIBUTING.md",
@@ -1726,9 +1726,34 @@
       "path": "VR remote control/ci/rd-tests.yml",
       "bytes": 388,
       "sha256": "2137be27ad7a16455e136781097d274b092e148ca13efd8383e4148e6f5e0d63"
+    },
+    {
+      "path": "docs/images/README.md",
+      "bytes": 676,
+      "sha256": "32905e97aa3b42317c3b1f3b7a54b1615c285348c3bee0254c62abc14c31cade"
+    },
+    {
+      "path": "docs/images/rd-panel.png",
+      "bytes": 266135,
+      "sha256": "a259d8f08375d1bd3949ead61625fb7f0641fde1b06a442dff6b1c394bf8b88d"
+    },
+    {
+      "path": "docs/images/robostudio-banner.png",
+      "bytes": 138428,
+      "sha256": "9537adb80d3b19861cbeea36fdea5800c504348ac5db95df05c3ae9067c95642"
+    },
+    {
+      "path": "docs/images/robostudio-banner.svg",
+      "bytes": 5752,
+      "sha256": "35e954817a812e3f2f01f463f9692aabb3a2d56b3117af9eda0d81ecadc7f345"
+    },
+    {
+      "path": "docs/images/rs-workbench.png",
+      "bytes": 264661,
+      "sha256": "97a3a77f2e6aa57211a8d3160572d2bec6c05dcf65b951b2b68cd2820a57e248"
     }
   ],
-  "totalBytes": 19421933,
+  "totalBytes": 20100431,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }
