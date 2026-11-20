@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 9184,
-      "sha256": "7c77581e687514b8e352752ad68b8a2745d655c672f4531510b2335553f078c4"
+      "bytes": 8888,
+      "sha256": "9ff523b90c75eee58beedf80eeba5267ef62ac84a434f2691a2684aae5d1e9b9"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -1773,7 +1773,7 @@
       "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
     }
   ],
-  "totalBytes": 23202975,
+  "totalBytes": 23202679,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }

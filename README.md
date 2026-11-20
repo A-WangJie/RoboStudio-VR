@@ -12,11 +12,11 @@ RS 的网页版与 Electron 桌面版共用 Three.js 界面和 Python / MuJoCo �
 
 ## 全流程操作演示
 
-[![观看 RoboStudio-VR 全流程操作演示](docs/images/full-workflow-poster.jpg)](https://github.com/A-WangJie/RoboStudio-VR/blob/main/docs/videos/robostudio-vr-full-workflow.mp4)
+https://github.com/user-attachments/assets/c259b69e-79b3-4d2c-a495-774408e26fc8
 
-**[点击播放全流程演示（约 34 秒）](https://github.com/A-WangJie/RoboStudio-VR/blob/main/docs/videos/robostudio-vr-full-workflow.mp4)** · [下载 MP4](https://raw.githubusercontent.com/A-WangJie/RoboStudio-VR/main/docs/videos/robostudio-vr-full-workflow.mp4)
+约 34 秒，包含头显内 RD 操作、机械臂遥操作与仿真画面对照。连接信息区域已遮挡，原始录像不随仓库公开。
 
-演示包含头显内 RD 操作、机械臂遥操作与仿真画面对照。连接信息区域已遮挡，视频转为 H.264 / AAC，保留原有时长；原始录像不随仓库公开。
+[下载 MP4](https://raw.githubusercontent.com/A-WangJie/RoboStudio-VR/main/docs/videos/robostudio-vr-full-workflow.mp4)
 
 ## 界面预览
 
