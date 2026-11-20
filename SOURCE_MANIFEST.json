@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10288,
-      "sha256": "4a5de441c5a130013de69d2d1041fff0969edded6db5c3a842f48cac19d39295"
+      "bytes": 10446,
+      "sha256": "e2aa33a57bac39d81845864a09f81a12a75b01339e712833b4de355769538e8b"
     },
     {
       "path": "S1Studio",
@@ -1394,8 +1394,8 @@
     },
     {
       "path": "docs/images/README.md",
-      "bytes": 713,
-      "sha256": "b14c5462066c96197cdc5ffacee38521f1c377413344e4e5432e6e1ae3d9fb65"
+      "bytes": 872,
+      "sha256": "af3b8f449677b61a7026ce9843e1601112dd06d3ab1447805d5322168073982a"
     },
     {
       "path": "docs/images/badge-0.svg",
@@ -1811,9 +1811,14 @@
       "path": "tools/install_s1_extensions.py",
       "bytes": 2214,
       "sha256": "f520a24bf088378cd15c88b8b2b76f821d7d65129fc2d7348458b2be0830e648"
+    },
+    {
+      "path": "docs/images/robostudio-workflow-loop.webp",
+      "bytes": 6912250,
+      "sha256": "300982bd9543936fa22f3ecdd54d511a5a99265fe5333c62c99059792c7e7dbb"
     }
   ],
-  "totalBytes": 23208432,
+  "totalBytes": 30120999,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }

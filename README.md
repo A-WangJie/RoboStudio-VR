@@ -21,11 +21,11 @@
 
 ## 全流程操作演示
 
-https://github.com/user-attachments/assets/c259b69e-79b3-4d2c-a495-774408e26fc8
+![RoboStudio-VR 全流程操作演示，自动循环播放](docs/images/robostudio-workflow-loop.webp)
 
-约 34 秒，包含头显内 RD 操作、机械臂遥操作与仿真画面对照。连接信息区域已遮挡，原始录像不随仓库公开。
+约 34 秒，自动循环播放（无声）。包含头显内 RD 操作、机械臂遥操作与仿真画面对照，连接信息区域已遮挡。
 
-[下载 MP4](https://raw.githubusercontent.com/A-WangJie/RoboStudio-VR/main/docs/videos/robostudio-vr-full-workflow.mp4)
+[观看带声音、可拖动进度的完整视频](https://github.com/user-attachments/assets/c259b69e-79b3-4d2c-a495-774408e26fc8) · [下载 MP4](https://raw.githubusercontent.com/A-WangJie/RoboStudio-VR/main/docs/videos/robostudio-vr-full-workflow.mp4)
 
 ## 界面预览
 
