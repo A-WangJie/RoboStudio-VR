@@ -2,11 +2,20 @@
 
 # RoboStudio-VR
 
-**从自研 VR 采集端到机械臂仿真与控制工作台。**
+<p align="center">
+  <img src="docs/images/badge-0.svg" alt="RS 0.3.0"> <img src="docs/images/badge-1.svg" alt="RD 0.3.9"> <img src="docs/images/badge-2.svg" alt="Python 3.10"> <img src="docs/images/badge-3.svg" alt="Unity 6 / OpenXR"><br>
+  <img src="docs/images/badge-4.svg" alt="Ubuntu 22.04"> <a href="LICENSE"><img src="docs/images/badge-5.svg" alt="License MIT"></a> <a href="docs/open-source.md"><img src="docs/images/badge-6.svg" alt="Status Experimental"></a>
+</p>
 
-RoboStudio-VR 面向 S1 V1 六轴机械臂，将电脑端 **RoboStudio（RS）** 与基于 **Unity / OpenXR 自主搭建的 RoboData（RD）** 连接起来，打通手柄输入、位姿映射、运动仿真、任务数据采集与受限真机控制。
+**RoboStudio-VR** 面向 S1 V1 六轴机械臂，将自主开发的 **Unity / OpenXR 头显端 RoboData（RD）** 与电脑端 **RoboStudio（RS）** 连接起来，构建从 VR 输入、位姿映射到仿真、遥操作与任务数据采集的工作流。
 
-RS 的网页版与 Electron 桌面版共用 Three.js 界面和 Python / MuJoCo 后端；RD 在 Meta Quest 3 上运行，通过 USB 转发或局域网 Wi-Fi 传输左右手柄数据。
+<img src="docs/images/xj-monogram.svg" width="32" height="24" alt="XJ"> **自主搭建的 VR 入口。** RD 在 Meta Quest 3 上运行，从场景、交互面板到 C# 输入与通信逻辑自主实现，读取双手柄位姿、按键、扳机和追踪状态，通过 USB 转发或局域网 Wi-Fi 与 RS 对接。
+
+<img src="docs/images/xj-monogram.svg" width="32" height="24" alt="XJ"> **从手柄动作到机械臂跟随。** 相对起点对齐、坐标映射与逆运动学串起连续位姿控制，支持握键跟随、松手保持、重新锚定和抓取位姿复位，并处理追踪丢失与数据断流。
+
+<img src="docs/images/xj-monogram.svg" width="32" height="24" alt="XJ"> **统一的 RS 工程工作台。** Three.js 界面与 Python / MuJoCo 后端承载三维场景、鼠标与关节控制、运动仿真及真机配置；网页版与 Electron 桌面版共用核心功能。
+
+<img src="docs/images/xj-monogram.svg" width="32" height="24" alt="XJ"> **贯穿两端的数据采集。** RD 的任务输入与采集状态联动 RS 的录制管理，连接手柄数据接收、任务命名与文件保存，为后续示教数据整理和实验提供基础。
 
 [快速开始](docs/quickstart.md) · [SDK 与模型准备](docs/sdk-installation.md) · [RD / Unity](VR%20remote%20control/README.md) · [架构](docs/architecture.md) · [MIT 许可证](LICENSE)
 

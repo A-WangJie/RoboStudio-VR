@@ -3,24 +3,14 @@
   "project": "RoboStudio-VR",
   "files": [
     {
-      "path": "README.md",
-      "bytes": 8888,
-      "sha256": "9ff523b90c75eee58beedf80eeba5267ef62ac84a434f2691a2684aae5d1e9b9"
+      "path": ".gitattributes",
+      "bytes": 284,
+      "sha256": "f11b6aa5a74ec18b2c44df52178e0a1c8bea0448b5a4809293eddb3abb2fb126"
     },
     {
-      "path": "CONTRIBUTING.md",
-      "bytes": 1372,
-      "sha256": "fe4a94b49e7a84d3977584c4079aae6ea0d0bb5a8ac4be8d6af132b325786561"
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2100,
-      "sha256": "dda50bff0f68650377fa7a46df46c63fa9a86a28a97bc48ac52db8877f3551e0"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 1066,
-      "sha256": "dbe7747ef8238c5a840e2daaa42ede0568341e768c367e660d0c5598a5a828ba"
+      "path": ".github/workflows/checks.yml",
+      "bytes": 386,
+      "sha256": "938fd00e4547bfe763b1fae8df07b0d7a106b33448ff4ad11fa98bd326915cf8"
     },
     {
       "path": ".gitignore",
@@ -28,14 +18,19 @@
       "sha256": "fb0b83e92661c08ebf63849a59b9392af90e9e8e1e1d4285a104f9a9ebc3e576"
     },
     {
-      "path": ".gitattributes",
-      "bytes": 284,
-      "sha256": "f11b6aa5a74ec18b2c44df52178e0a1c8bea0448b5a4809293eddb3abb2fb126"
+      "path": "CONTRIBUTING.md",
+      "bytes": 1372,
+      "sha256": "fe4a94b49e7a84d3977584c4079aae6ea0d0bb5a8ac4be8d6af132b325786561"
     },
     {
-      "path": "server.py",
-      "bytes": 18514,
-      "sha256": "c99888519057a85013917f1403bf2dd3b9406df37c5051158d1efded1550a1d8"
+      "path": "LICENSE",
+      "bytes": 1066,
+      "sha256": "dbe7747ef8238c5a840e2daaa42ede0568341e768c367e660d0c5598a5a828ba"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10288,
+      "sha256": "4a5de441c5a130013de69d2d1041fff0969edded6db5c3a842f48cac19d39295"
     },
     {
       "path": "S1Studio",
@@ -43,34 +38,959 @@
       "sha256": "c66ca7eec49f0be13fd36483e01486e14161bc4749242273a8258b1f1bd36f47"
     },
     {
-      "path": "start-desktop.sh",
-      "bytes": 138,
-      "sha256": "aff6c620213aa8625c85e1ea8c2b7cfee926228afbd2db986591863d21e85c0f"
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2100,
+      "sha256": "dda50bff0f68650377fa7a46df46c63fa9a86a28a97bc48ac52db8877f3551e0"
     },
     {
-      "path": "start-studio.sh",
-      "bytes": 169,
-      "sha256": "19c97f4eaf853698c87d7ae7d8b297152f88b13dcd1e67b8a7cf5409ed974730"
+      "path": "VR remote control/.gitattributes",
+      "bytes": 184,
+      "sha256": "11b43211e2f4ce7696e3ee4515a3b15730250c1b3081e090931c743f94ed245c"
     },
     {
-      "path": "install-desktop.sh",
+      "path": "VR remote control/.gitignore",
+      "bytes": 1117,
+      "sha256": "6b0fa9c281992df1c8c9566e6742e5e6a6c9e932d5873a9011adab07b19da005"
+    },
+    {
+      "path": "VR remote control/CONTRIBUTING.md",
+      "bytes": 1152,
+      "sha256": "38295b7e167102d4cca92252be2dc71f080ebc3429de70436de9942b6cb4fd78"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Branding.meta",
       "bytes": 172,
-      "sha256": "90953f85f3203dd5b7504ccbf5746cd907861952d907e9075702d56378aa5333"
+      "sha256": "e1cff455d06900f2983d2299ca63c11f1217f06c0a40dd0983e5691b7fe89bbd"
     },
     {
-      "path": "requirements.txt",
-      "bytes": 50,
-      "sha256": "7d3b8946fdec8e97f242fca82326a7ec01c448d20ce3132c028938865c0515a5"
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataBackground.png",
+      "bytes": 1878,
+      "sha256": "d17ab9b1d389c20c5440a5534efd0b28ef580265c0f82b64ad5cc8ee912ff0a4"
     },
     {
-      "path": "requirements-simulation.txt",
-      "bytes": 45,
-      "sha256": "62aa214bc729915a5ee0eff235d4b86c790cfae1a5f3d0849156708d1ee7d84e"
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataBackground.png.meta",
+      "bytes": 3009,
+      "sha256": "ba14c347192da09a943b44a7bd5d578ad9b1857e56dff45771447f90af4a5997"
     },
     {
-      "path": "requirements-lock.txt",
-      "bytes": 223,
-      "sha256": "26e64286d632d04de60c9e4f121d7f10b508aa39bc6b9dabf10214d19c3b3af4"
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataForeground.png",
+      "bytes": 18137,
+      "sha256": "62bbd85140657376662a88bc6be87fd420daa73d2aa9bf65707bbc17f65366d3"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataForeground.png.meta",
+      "bytes": 3009,
+      "sha256": "f58ac8ff3bc89efa8b29c35aafc8229a14cde2393299bc78ccfb620bf6730b2c"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataIcon.png",
+      "bytes": 39717,
+      "sha256": "956063733534db2b05eabc3d80f58d4e5ea58e4cd7b053e0e43cd395632e4a10"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataIcon.png.meta",
+      "bytes": 3009,
+      "sha256": "ffb12aff7e7aba5ffad2f15150da8bc9bd2c8fe461a00cee0f3dc031eaa14a9e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/CompositionLayers.meta",
+      "bytes": 172,
+      "sha256": "8f2a3cdbd56471e6730c7bec9fcc60ab888cc76c7a16cc00ee3ff251fe6f5a62"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/CompositionLayers/UserSettings.meta",
+      "bytes": 172,
+      "sha256": "b4cc2f786cd4e9850149493eacbb275cf68f3142c282073cf06cc9a7b491ff3d"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/InputSystem_Actions.inputactions",
+      "bytes": 41005,
+      "sha256": "1c6cbb519d65ecfe19a29231735b7f54741a20ac1a8ad4f46a18e1bfb28a3c39"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/InputSystem_Actions.inputactions.meta",
+      "bytes": 376,
+      "sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Readme.asset",
+      "bytes": 1144,
+      "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Readme.asset.meta",
+      "bytes": 182,
+      "sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources.meta",
+      "bytes": 172,
+      "sha256": "c4789b979fc39e149742f9735e3f6eb8dedb2c75b92092761b9cd18af2c7ede5"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont-LICENSE.txt",
+      "bytes": 14716,
+      "sha256": "5bb218343ded506b258d86186d460fc47d9b6b28f0e642cf32676c396b7df763"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont-LICENSE.txt.meta",
+      "bytes": 158,
+      "sha256": "0a055c62329feb78d245faf1fd6a123f93e072e9e7ecb8a8bb28cc38ff166123"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont.otf",
+      "bytes": 16437340,
+      "sha256": "48b8d0ad46a14360cb8b50d5aa4c3be7901e0e2642e9960a172f709a7751b595"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont.otf.meta",
+      "bytes": 481,
+      "sha256": "d69e80f1c8bf337ec0dc9122164a77e0a2d14205f8a6e0c296f3f2c5124f7647"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataPointer.mat",
+      "bytes": 1878,
+      "sha256": "4eec7f0aefbd59a5c7ee3cb0a3462bbaba807a6601cb910170ad5d2c7035e8ee"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataPointer.mat.meta",
+      "bytes": 188,
+      "sha256": "e9af1835dbf08b852fbb319d900a10d80de57d25330ede7b1eb032abf97474fb"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR.meta",
+      "bytes": 172,
+      "sha256": "349368fb96fe03d5618b0610fe940e26c24a3d0e8f1e3c5c076c571b92728c71"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerDiagnostics.cs",
+      "bytes": 5881,
+      "sha256": "38a71870f51303e9159d43c50fb4a5a381402b3d3a6dc62e211386b1339d636c"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerDiagnostics.cs.meta",
+      "bytes": 59,
+      "sha256": "e22785b886aeb7ef6294c37c24746360563b819bd0925f7761a7479b1d480297"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerInput.cs",
+      "bytes": 4510,
+      "sha256": "26ee8a083d14a01a0db27532569df2b1c56a61710a73d8b71c5110de48f0fbc7"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerInput.cs.meta",
+      "bytes": 59,
+      "sha256": "fc7b5036729c41cfbc23ae8afcb6d87cd25c4ed0476c87b36c9065a84ca82de3"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor.meta",
+      "bytes": 172,
+      "sha256": "43d80fe84ab92c44d20f79fc74fdd081cf12ad7ecc9a0d99f839c0049571b145"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/BuildRoboData.cs",
+      "bytes": 3391,
+      "sha256": "2d0d1642c33c0697d25ca6e29625c11c105a40b45fd59aca0d969917484d387b"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/BuildRoboData.cs.meta",
+      "bytes": 59,
+      "sha256": "6a557f6ea0a6b54c94f1db97c1d767b9d80144b29bda0d06da12ccca6b2a2ad0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/CreateDiagnosticsScene.cs",
+      "bytes": 3505,
+      "sha256": "3bd8b058542ca8e5e7e7d4c00434e9f6ed15a17016908739025705a59a4b1eef"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/CreateDiagnosticsScene.cs.meta",
+      "bytes": 59,
+      "sha256": "404be76dfec8ed62a5c983227f4214b71ceb21cb567d2995c79e2903bb3aee80"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/PreviewRoboData.cs",
+      "bytes": 3241,
+      "sha256": "5eb3ef9391e7929b0f18e2a9c65e12703b41208764b05e8bdb0f7f4c7d06ea54"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/PreviewRoboData.cs.meta",
+      "bytes": 59,
+      "sha256": "7550ae0c73a70cd2e68feb93b7eb7f8a42979a37707bf039c6011af9e1d12aaf"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateControllerRecovery.cs",
+      "bytes": 4891,
+      "sha256": "2f65087538ba5f28bf0c3910863abacbeb7604480f047a6e4f386db25f4af5e9"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateControllerRecovery.cs.meta",
+      "bytes": 59,
+      "sha256": "ef1f63063ef9c5b660b87bda69d569efe6ee750b222187f52dcab87f1cff9d28"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateDiagnosticsScene.cs",
+      "bytes": 1540,
+      "sha256": "b08fccf2c6fa5568995a4fbbb969445303761c3a717df44b0a43dff17f632c3e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateDiagnosticsScene.cs.meta",
+      "bytes": 59,
+      "sha256": "4d1d30059f017b8d0faf4a914fa6514357a132b87e0cc2a8f4aa3fb271f40c84"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateRightHandShortcuts.cs",
+      "bytes": 3278,
+      "sha256": "81694c5d60fadc49ba1d1be7534a9773f782e4b51cdad9a79f1803698a35bf38"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateRightHandShortcuts.cs.meta",
+      "bytes": 59,
+      "sha256": "f7b299c74582406ac62930f58e82a40629e752266ee6ff979696b515926f7fe6"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/QuestTelemetrySender.cs",
+      "bytes": 14657,
+      "sha256": "7271000eea214910db83fdbd4654c87fac6f2bcc467ae684fa23f8c3c3f00bca"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/QuestTelemetrySender.cs.meta",
+      "bytes": 59,
+      "sha256": "0846ba8592d419bc9d605344413fab565382a161b6f94c50098ddc0084075c5e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RightHandShortcuts.cs",
+      "bytes": 799,
+      "sha256": "4d73f4041b68fba0b693ac503befb0f301c127aff523996ca1f867c3c6eea5ca"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RightHandShortcuts.cs.meta",
+      "bytes": 59,
+      "sha256": "19db2c96dcd539bc9efbdfbd315f94e6e70bfeb03aa2cdfdf84f1494a77f8824"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RoboDataPanel.cs",
+      "bytes": 16556,
+      "sha256": "3c06817fcc4b4dde84b9838f7ac9342fc4544ecfdebc531e0ecc907ab49a1adb"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RoboDataPanel.cs.meta",
+      "bytes": 59,
+      "sha256": "8a775e59ec4f0fa693abcb27b7e6233250ec57d17e10de48cce51ea1ca828b70"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Scenes.meta",
+      "bytes": 172,
+      "sha256": "35c01d5c73a4822962ee4142fc1e961c9a66654a6854ed07ec2b8ed84e6857e3"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Scenes/ControllerDiagnostics.unity",
+      "bytes": 15036,
+      "sha256": "b1a41d9a92230e0d8ac5ec0d4c0b50d240538bfe129791ae531a4373541b1ad8"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Scenes/ControllerDiagnostics.unity.meta",
+      "bytes": 155,
+      "sha256": "36883569fca84c653643b46687a365545d67c03e02e31d93f985ddadb8381b8a"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Scenes/SampleScene.unity",
+      "bytes": 11413,
+      "sha256": "07fce8b04804ddccb3026db5b43d8dc41ba138e49d50d36a5c24877081eacdca"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Scenes/SampleScene.unity.meta",
+      "bytes": 155,
+      "sha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings.meta",
+      "bytes": 172,
+      "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/DefaultVolumeProfile.asset",
+      "bytes": 24035,
+      "sha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "bytes": 189,
+      "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_RPAsset.asset",
+      "bytes": 4648,
+      "sha256": "209700d758229a3957d654e2ef5086149d5114f4d64fe354faaaaa2ec5d48597"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_RPAsset.asset.meta",
+      "bytes": 189,
+      "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_Renderer.asset",
+      "bytes": 1713,
+      "sha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_Renderer.asset.meta",
+      "bytes": 189,
+      "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_RPAsset.asset",
+      "bytes": 4669,
+      "sha256": "08a9c221b335a0dbca1b6967b7de5c42b957c5f0d5e43da9edb36ca8fce5966b"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_RPAsset.asset.meta",
+      "bytes": 189,
+      "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_Renderer.asset",
+      "bytes": 3439,
+      "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_Renderer.asset.meta",
+      "bytes": 189,
+      "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/SampleSceneProfile.asset",
+      "bytes": 3703,
+      "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/SampleSceneProfile.asset.meta",
+      "bytes": 182,
+      "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "bytes": 26038,
+      "sha256": "71cd1898a8ad15c7e1c518d1ff5cb4b925911da1ed8b6f76945a87d855c82dc6"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "bytes": 189,
+      "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo.meta",
+      "bytes": 172,
+      "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons.meta",
+      "bytes": 193,
+      "sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons/URP.png",
+      "bytes": 24069,
+      "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons/URP.png.meta",
+      "bytes": 3156,
+      "sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Layout.wlt",
+      "bytes": 15479,
+      "sha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Layout.wlt.meta",
+      "bytes": 176,
+      "sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts.meta",
+      "bytes": 193,
+      "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor.meta",
+      "bytes": 193,
+      "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+      "bytes": 6677,
+      "sha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+      "bytes": 264,
+      "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Readme.cs",
+      "bytes": 302,
+      "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Readme.cs.meta",
+      "bytes": 317,
+      "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR.meta",
+      "bytes": 172,
+      "sha256": "dc7f4b3a8ac8efb78e9398d36bd2b416c0e0e5c27186d7f0f30ececf2761c3ad"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders.meta",
+      "bytes": 172,
+      "sha256": "30ab55ecc5613803124d4d80da0d62b004c6d181af995b7f96aef2f4188b2abd"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders/OpenXRLoader.asset",
+      "bytes": 452,
+      "sha256": "3dade780ddfc9ef1e12c3275788df48569ad586f9310d96cd91105e1c5739a7a"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders/OpenXRLoader.asset.meta",
+      "bytes": 189,
+      "sha256": "5f7edb8e84e97095e649018cacb09a6fdef57cd52e9c91c0cc48e626502c679e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources.meta",
+      "bytes": 172,
+      "sha256": "c80ff358f80b65a5256a6dd1febc4b49535895ec7abe724694d3cd983dfed8ef"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources/XRSimulationRuntimeSettings.asset",
+      "bytes": 1920,
+      "sha256": "b5d862588e148e5370808d52abc0f8ec584ec8549a436dddc7044fb14faea9d5"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources/XRSimulationRuntimeSettings.asset.meta",
+      "bytes": 189,
+      "sha256": "52d025664f531467e6eeade3d62bcc60f2b9390faa57f12470548624665c333f"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 1.meta",
+      "bytes": 172,
+      "sha256": "4c16f08b959eb94c0ed5c972c680c7dba652b2bbd2326dd96d8e5a4bdfcf2ad2"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 2.meta",
+      "bytes": 172,
+      "sha256": "d75d406fb0a07cbc0cc965050f267829f09700db4a1b88e8e8962eb6467c49c0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 3.meta",
+      "bytes": 172,
+      "sha256": "58b3d21f1e7d965ecaa8f4bd71298bb30d80c623b716c74fcdf8263b128f63b1"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 4.meta",
+      "bytes": 172,
+      "sha256": "6dfc79b09786c482ee022b6df32b0531308a4e065c084e83ce55307f52d8b5f5"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings.meta",
+      "bytes": 172,
+      "sha256": "529f0115dc359251b6e13aadaf010da457d2859ada66c39254ab495d830d3289"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Editor Settings.asset",
+      "bytes": 581,
+      "sha256": "0a04d3014504fca0e88ace93470aa51e1a00f408d631b5b34860128fd79ec2ca"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Editor Settings.asset.meta",
+      "bytes": 189,
+      "sha256": "ec686c28e9ff50ad9388a00aa67b1da9ba3494115b8f381a6dbdc2b10975c7f0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Package Settings.asset",
+      "bytes": 46005,
+      "sha256": "3ec17837ae9d478fc4412766d248f683e33f2a8edde782ad59c3289c4da77d8e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Package Settings.asset.meta",
+      "bytes": 189,
+      "sha256": "82b4a1768e095875418161dfe266117b1122c056d05916431d94c255a13e6b14"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings.meta",
+      "bytes": 172,
+      "sha256": "604cc85de79d21182978bf622e13d4ae898c8c72e7120f775ef84c96cac81c01"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources.meta",
+      "bytes": 172,
+      "sha256": "a5a998f8e0a0d9888d19883dcebd24efd5246ba7fbe7514f3d46b769a20f0a43"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset",
+      "bytes": 1159,
+      "sha256": "01ee1be7b338cc222fc87c63f8832ec37345ad067325ab10fcce4ad0d2110969"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset.meta",
+      "bytes": 189,
+      "sha256": "0b83497d935914725ab678ad142ee4db8ffbfe0a23284b4f20948adf55a32881"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/XRGeneralSettingsPerBuildTarget.asset",
+      "bytes": 1729,
+      "sha256": "d6c78070609524b4d27a72b1780b29ed5e7d972d5f142bfebfa4c40f95252f82"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Assets/XR/XRGeneralSettingsPerBuildTarget.asset.meta",
+      "bytes": 189,
+      "sha256": "8abb5afb30c60f930766df99f3001d0a9af0ff3754ae55a7ad5f145132a181c6"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Packages/manifest.json",
+      "bytes": 2138,
+      "sha256": "bab697e49d59e074db60749962d935f7ec0bd04fd5a42e04867b2acccac15e98"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/Packages/packages-lock.json",
+      "bytes": 15374,
+      "sha256": "a3ffb45ca1cf6472b07d1ebb6306a38484d387ef1cb8a01b371f7ff4d4c2a4b5"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/AudioManager.asset",
+      "bytes": 413,
+      "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/ClusterInputManager.asset",
+      "bytes": 114,
+      "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/DynamicsManager.asset",
+      "bytes": 1254,
+      "sha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/EditorBuildSettings.asset",
+      "bytes": 727,
+      "sha256": "3c8ef5c3415d0e01fb3b034bc50e4729f4e5fdc801655704ff20757c2baca598"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/EditorSettings.asset",
+      "bytes": 1585,
+      "sha256": "32d6a9be4c9aa9795a96bd951820a2d9be1bfefab82ed05a5db111af0863938f"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/GraphicsSettings.asset",
+      "bytes": 2615,
+      "sha256": "6736f33dc62c35b0e7a88e275242080bc7a1d94c91154d18fceb332b661a6bce"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/InputManager.asset",
+      "bytes": 9731,
+      "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/MemorySettings.asset",
+      "bytes": 1192,
+      "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/MultiplayerManager.asset",
+      "bytes": 157,
+      "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/NavMeshAreas.asset",
+      "bytes": 1308,
+      "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/PackageManagerSettings.asset",
+      "bytes": 1003,
+      "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/Physics2DSettings.asset",
+      "bytes": 2028,
+      "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/PresetManager.asset",
+      "bytes": 146,
+      "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/ProjectSettings.asset",
+      "bytes": 27380,
+      "sha256": "8349059edd0d412c2b8e1e5e5063edc7a383723e00036c35322adac748a8f808"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/ProjectVersion.txt",
+      "bytes": 85,
+      "sha256": "91b35566b263574c8a513eff3bba6d5d313482d752d961077b47ab5b3ff14981"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/QualitySettings.asset",
+      "bytes": 3662,
+      "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/SceneTemplateSettings.json",
+      "bytes": 3535,
+      "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/ShaderGraphSettings.asset",
+      "bytes": 556,
+      "sha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/TagManager.asset",
+      "bytes": 657,
+      "sha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/TimeManager.asset",
+      "bytes": 202,
+      "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/URPProjectSettings.asset",
+      "bytes": 461,
+      "sha256": "c317fe22b9488785c0611f0642429922e5d324430d929bffb41648130f30c218"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/UnityConnectSettings.asset",
+      "bytes": 1063,
+      "sha256": "98f142992d8a623501c99648e1b7363adca08b67bb50390b566df368d00bc9a0"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/VFXManager.asset",
+      "bytes": 308,
+      "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/VersionControlSettings.asset",
+      "bytes": 188,
+      "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071"
+    },
+    {
+      "path": "VR remote control/QuestControllerClient/ProjectSettings/XRSettings.asset",
+      "bytes": 158,
+      "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f"
+    },
+    {
+      "path": "VR remote control/README.md",
+      "bytes": 4477,
+      "sha256": "d514fe8fda18930d62d651776c105e66e0ef1dde30f1de12fdd34226b05010fe"
+    },
+    {
+      "path": "VR remote control/THIRD_PARTY_NOTICES.md",
+      "bytes": 1443,
+      "sha256": "2befd7cf4db050c8f5e332b44b4e010e751fd1bba2a1b1b76b284662f379b247"
+    },
+    {
+      "path": "VR remote control/bridge/__init__.py",
+      "bytes": 62,
+      "sha256": "5247191734be8fc4272811a815b6b31bc928d15d591aa084b2fe5393e80a382b"
+    },
+    {
+      "path": "VR remote control/bridge/adb_device.py",
+      "bytes": 1121,
+      "sha256": "b42a4b843c606ae08036620a10f176a312881ebe4643fac9f8ed6612909cc867"
+    },
+    {
+      "path": "VR remote control/bridge/client_setup.py",
+      "bytes": 4241,
+      "sha256": "5416642cad40af5f7daa4bc5b64bf9e7e144b94a37b9bc538e3dd307bc1ad1c5"
+    },
+    {
+      "path": "VR remote control/bridge/connection.py",
+      "bytes": 1549,
+      "sha256": "a6d028b8c6dba1e59866fbf7a9fdf2fb897176f5ef7b7ffb1b3029a4b2939939"
+    },
+    {
+      "path": "VR remote control/bridge/index.html",
+      "bytes": 9357,
+      "sha256": "690479e8cba7b917d4c70145f7b1573caa6ea29337cf45af818d4b0e4d979eca"
+    },
+    {
+      "path": "VR remote control/bridge/mapping.py",
+      "bytes": 3446,
+      "sha256": "ed41ed5e88a539813d85a382fd5a85d2d0d243fc435fc0c71eccae4345fcb844"
+    },
+    {
+      "path": "VR remote control/bridge/paths.py",
+      "bytes": 884,
+      "sha256": "f31c8a840e27c41cc7633e34769f8f4f7ee4537c91e5ea279f6250b510d99d8f"
+    },
+    {
+      "path": "VR remote control/bridge/pose_controls.py",
+      "bytes": 2569,
+      "sha256": "f9b7d730b8a9e077bc52c84f5d16b65282e3ab5d991caba13dbb4310c1a73f11"
+    },
+    {
+      "path": "VR remote control/bridge/protocol.py",
+      "bytes": 1597,
+      "sha256": "84fd0dbd3b9924057d8569d522251ac679dbcdd5b1916d77fd099bd63e289ff4"
+    },
+    {
+      "path": "VR remote control/bridge/readonly_guard.py",
+      "bytes": 1545,
+      "sha256": "e9009242fb648887af2ae6911f8c1ab66f91aaa756409ac54a6554a5c83effe8"
+    },
+    {
+      "path": "VR remote control/bridge/recording.py",
+      "bytes": 3202,
+      "sha256": "09854af624a9803bdd057d0d53ab5fed5052af8396cf4974b48375e7f382be26"
+    },
+    {
+      "path": "VR remote control/bridge/server.py",
+      "bytes": 17687,
+      "sha256": "c319943b533a43955ef57d1b3c27983a8037b40bfcebac73da5d25595151c291"
+    },
+    {
+      "path": "VR remote control/bridge/simulation_link.py",
+      "bytes": 11289,
+      "sha256": "041fd882be27409d9ce6565e2a67da1aae5549e6ceaf04cb49c2ae3620219d70"
+    },
+    {
+      "path": "VR remote control/bridge/teaching_capture.py",
+      "bytes": 6832,
+      "sha256": "0255768ef4725af66bcca5baf41d6690d3871fea98c7550c57d36db7494fbb0e"
+    },
+    {
+      "path": "VR remote control/bridge/teaching_reader.py",
+      "bytes": 3569,
+      "sha256": "3cd3de8746827c965a2390df16cacbe35bd4626b86bf750669433f6bb66ae506"
+    },
+    {
+      "path": "VR remote control/bridge/wear_mode.py",
+      "bytes": 6862,
+      "sha256": "2c0c668e2d5294338ce799ab210fe7a7be289681e9a360d15c65266fff221241"
+    },
+    {
+      "path": "VR remote control/bridge_service.py",
+      "bytes": 3614,
+      "sha256": "d48f97b558c299bf4c5565f58782acc70855c3427d475afae5c9cf11a994db5a"
+    },
+    {
+      "path": "VR remote control/ci/rd-tests.yml",
+      "bytes": 388,
+      "sha256": "2137be27ad7a16455e136781097d274b092e148ca13efd8383e4148e6f5e0d63"
+    },
+    {
+      "path": "VR remote control/config/70-quest.rules",
+      "bytes": 134,
+      "sha256": "79c8420943256e8e5a6083427914afd21fb06abef8e84730975a076a37b50ab9"
+    },
+    {
+      "path": "VR remote control/config/connection.example.json",
+      "bytes": 35,
+      "sha256": "8add2834fcbd4f8af6d2bce7d9eb1a57e73a2f1fcffceb123ae272a0ac5282af"
+    },
+    {
+      "path": "VR remote control/config/wireless-adb.example.json",
+      "bytes": 43,
+      "sha256": "ee6f7bad6b7ca4bc4234d0338c18748b03ad6ab07221cd74a8fbb78cbc42216f"
+    },
+    {
+      "path": "VR remote control/docs/RoboData.md",
+      "bytes": 9467,
+      "sha256": "f8cc323534ce03dd4ee1f3f74eab6ec1557288718e88c5dff538fce650c18b9b"
+    },
+    {
+      "path": "VR remote control/docs/architecture.md",
+      "bytes": 1426,
+      "sha256": "49f5c3d1c4f0826da3c33042f2d6fdffe7d7fd127f1f46da2ac9728154b1944b"
+    },
+    {
+      "path": "VR remote control/docs/configuration.md",
+      "bytes": 1951,
+      "sha256": "07addc8294fbe62607287bd8c0d5e4efa74e271cf323deac6fb17b2bc7fb90e1"
+    },
+    {
+      "path": "VR remote control/docs/hardware-control.md",
+      "bytes": 7609,
+      "sha256": "c66600a1298fad2697196353031663fa2668ca732eaf5121a981da54c3ab225a"
+    },
+    {
+      "path": "VR remote control/docs/hotspot-latency.md",
+      "bytes": 1708,
+      "sha256": "26ee15ffc539e5f6dbe25502d4a068b4874d63f9dc1a73fa3f488a3f4b321a75"
+    },
+    {
+      "path": "VR remote control/docs/protocol.md",
+      "bytes": 1352,
+      "sha256": "530730e96356282dc1f4359fd645c6c53339e020cfa945b4ef199eee1a134582"
+    },
+    {
+      "path": "VR remote control/docs/quickstart.md",
+      "bytes": 2077,
+      "sha256": "27df60189561f993ae9a22fbadb47029faff5bfbffa76aade5e3742f9260f127"
+    },
+    {
+      "path": "VR remote control/docs/reorganization.md",
+      "bytes": 3307,
+      "sha256": "b00a2332f9fc0dff202b293ef742c405819ed1d2d31ea527d88efc5f82afe96f"
+    },
+    {
+      "path": "VR remote control/docs/unmounted-capture.md",
+      "bytes": 2640,
+      "sha256": "c95416e006de62add956df7ef23e2fd36ad4feeea3fed3bb6174644c0889b0d3"
+    },
+    {
+      "path": "VR remote control/docs/usb-telemetry.md",
+      "bytes": 2035,
+      "sha256": "20caa02b45560b96515be19aee128091aced11ceb4e58caebfd1f7ce02325786"
+    },
+    {
+      "path": "VR remote control/hardware_control.py",
+      "bytes": 15810,
+      "sha256": "aa94674186bd65dbb29416b94ef4e8eb32668849bf23b91674426b375c78b326"
+    },
+    {
+      "path": "VR remote control/pyproject.toml",
+      "bytes": 548,
+      "sha256": "84eaace35bc3e2f6fed3453e32d46e5f454041ecb08a961592b764454fc6ff9f"
+    },
+    {
+      "path": "VR remote control/quest-unmounted.sh",
+      "bytes": 179,
+      "sha256": "a5d31cd1f0e905e5173d8891736bbfbea8cd53112b90450eb0cd8117e3439b79"
+    },
+    {
+      "path": "VR remote control/requirements.txt",
+      "bytes": 19,
+      "sha256": "9ec828179a682425537349fb41440b48a47b1ef006b7b3e1d1542566d3ec6943"
+    },
+    {
+      "path": "VR remote control/scripts/build-quest.sh",
+      "bytes": 635,
+      "sha256": "382ce7484d4bbd3d036bc17b9df6068979913ada0afd3a09067b532d8c14e56e"
+    },
+    {
+      "path": "VR remote control/scripts/export-source.py",
+      "bytes": 3630,
+      "sha256": "a5dad7770d6172d058c270494f020f45ac89b383263470157c1987d5bea57b9d"
+    },
+    {
+      "path": "VR remote control/scripts/python-env.sh",
+      "bytes": 339,
+      "sha256": "75f39e6588ab8e5e0b88d2b12bb79495da4515449993f019cf99174558fab575"
+    },
+    {
+      "path": "VR remote control/scripts/quest-unmounted.sh",
+      "bytes": 1739,
+      "sha256": "6231e3bf684dd842379309c9f17500588b2f8a65f6ffdcf244fbe7be2dceb222"
+    },
+    {
+      "path": "VR remote control/scripts/start-bridge.sh",
+      "bytes": 474,
+      "sha256": "0dc9820ee112e8b8ffffb8c0fb798c4b853f0dd2c94b4451be94ff5aa120636c"
+    },
+    {
+      "path": "VR remote control/scripts/test.sh",
+      "bytes": 1013,
+      "sha256": "b5dd5eae1bf45a091fe923a22f386445140abd067e7b4f2efb0fca923f87ad4d"
+    },
+    {
+      "path": "VR remote control/start-bridge.sh",
+      "bytes": 172,
+      "sha256": "16a99747ba2da0150ea0ab47cae2444ac6297375050740fb4fdc832e341e2b25"
+    },
+    {
+      "path": "VR remote control/tests/test_bridge.py",
+      "bytes": 5287,
+      "sha256": "c7b33ac3c2b588837102a1933c621ee12ce7bcebd27de0609ad33cb284dfb6ab"
+    },
+    {
+      "path": "VR remote control/tests/test_bridge_service.py",
+      "bytes": 4487,
+      "sha256": "dfc0d5e6c4cb44c392e36e03aabb8274bfdd7ec89e033871ade262bab8902600"
+    },
+    {
+      "path": "VR remote control/tests/test_capture_chrome.py",
+      "bytes": 5361,
+      "sha256": "a3ece7a61f101536cf6509196edd18087ec7fdf60f819c4551506c2f1c447beb"
+    },
+    {
+      "path": "VR remote control/tests/test_client_setup.py",
+      "bytes": 5426,
+      "sha256": "0f0632108c3cd48d69cd26f9d09221652ed09f5528e590f91188cfd2009c83f5"
+    },
+    {
+      "path": "VR remote control/tests/test_mapping.py",
+      "bytes": 3101,
+      "sha256": "bcb0eaae0f21f35837bb5617a19737216b27e43b73705ceaf77bf566602034fc"
+    },
+    {
+      "path": "VR remote control/tests/test_pose_controls.py",
+      "bytes": 2041,
+      "sha256": "b13153ad08aa406727a3dbe40e57b5a304b13fc81dff2c0ffc1869fd079770d9"
+    },
+    {
+      "path": "VR remote control/tests/test_project_layout.py",
+      "bytes": 3705,
+      "sha256": "d3d37b60885a669799194fff0ead94198a3ee4211aa18bffdfeafe679f1efdc4"
+    },
+    {
+      "path": "VR remote control/tests/test_robodata.py",
+      "bytes": 4262,
+      "sha256": "0a8a6b1139e7a3917861646fe1bdca8b8d2086b16faf6f6934d86da3b808646e"
+    },
+    {
+      "path": "VR remote control/tests/test_setup_chrome.py",
+      "bytes": 6528,
+      "sha256": "ac56953424f62ce8c46bbc31c909d3ec167bbf6e0858e45cc0960b60ae1617ae"
+    },
+    {
+      "path": "VR remote control/tests/test_simulation_link.py",
+      "bytes": 3150,
+      "sha256": "e08450848d72786eddfaf95c52523598744b0dbebccbbd80244809c1e5f28c4a"
+    },
+    {
+      "path": "VR remote control/tests/test_teaching_capture.py",
+      "bytes": 4640,
+      "sha256": "1815a30da1752a3b02c9218c661dcfa7948a1b3fe3b550c0ab1b118dfeaada1e"
+    },
+    {
+      "path": "VR remote control/tests/test_wear_mode.py",
+      "bytes": 3713,
+      "sha256": "f6a18e7cecb5c2798409626fd2ba167d2765f672bf75781b9d7cefc839240eab"
+    },
+    {
+      "path": "VR remote control/tests_hardware/browser-vr-hardware.js",
+      "bytes": 6267,
+      "sha256": "35f149a48baa5b2324b0419f65872cd3541821ee64d4fcfccab4546aa2d05ff9"
+    },
+    {
+      "path": "VR remote control/tests_hardware/test_vr_hardware.py",
+      "bytes": 18866,
+      "sha256": "a6bc0cb4bdf210fb9b6c27668905dd70216e857a08d76a8a40e62f2bfbb1e333"
+    },
+    {
+      "path": "VR remote control/tests_hardware/test_vr_hardware_chrome.py",
+      "bytes": 6249,
+      "sha256": "c8f33c4f0e3a9f0c700949b9e26294d0ee9d472deb9e6a24769b1b4bc71a9bce"
+    },
+    {
+      "path": "VR remote control/ui/hardware.js",
+      "bytes": 10495,
+      "sha256": "9e8f18d87aa5c00c6823e9895e756d1b7c574afef82656b03f6daf070c7ee783"
+    },
+    {
+      "path": "VR remote control/ui/panels.css",
+      "bytes": 1721,
+      "sha256": "18e010ec3e8235e635598865b86f3f23d281e591f0250c87eafb68834f8a9993"
+    },
+    {
+      "path": "VR remote control/ui/panels.js",
+      "bytes": 16570,
+      "sha256": "1b916562821716f2f90b22d24005c382b880d85e3b090c0fea5b224bdd455083"
     },
     {
       "path": "app/arm-config.css",
@@ -348,6 +1268,31 @@
       "sha256": "a9ab483eadee79640800868e8c40482e3418f485f27656b6c8a3d21337ec4a86"
     },
     {
+      "path": "config/arms.example.json",
+      "bytes": 2632,
+      "sha256": "b9f9ee587aefe9cd7b0092ef1f387f36a119c6530ecf886797b6b25f1c12ab0a"
+    },
+    {
+      "path": "config/gripper-calibration.example.json",
+      "bytes": 33,
+      "sha256": "01a15bec15cc21335c73a25d25a6077fcd65d82b282581d580e3ef6736d63ef7"
+    },
+    {
+      "path": "config/project-shortcuts.example.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "config/runtime.example.json",
+      "bytes": 43,
+      "sha256": "f6475f62ce6a6916467661d7d7d3e9b178f33c7d18b2af7d16252d146b7e8a1f"
+    },
+    {
+      "path": "config/settings.example.json",
+      "bytes": 220,
+      "sha256": "47aa42aebd5e9fe1336c34179135f5542bb1a9ef3a92db1013265c6f4012a9b0"
+    },
+    {
       "path": "desktop/arm-config.cjs",
       "bytes": 904,
       "sha256": "5c59b81736cf19799b15601f7970b97bc6f46d938069920ba412f7cb68a329dc"
@@ -428,6 +1373,211 @@
       "sha256": "61cd1bcb6697aee7cc171ae160e9eb3f188e7816fe5712bb3374aec5860f392a"
     },
     {
+      "path": "docs/architecture.md",
+      "bytes": 3908,
+      "sha256": "469854d16710ae35b18021ae994418765b745c985f4e5a2e87dfa0f856bb6f95"
+    },
+    {
+      "path": "docs/arm-configuration.md",
+      "bytes": 10335,
+      "sha256": "cfa709f844abeb67b25cd354e018d20a597af1b0a4ce534fb5495e8fceea2465"
+    },
+    {
+      "path": "docs/configuration.md",
+      "bytes": 2582,
+      "sha256": "15d427ce5d0396fff28aceceb5a7b96600bdc2e8a254027a2ab41035fcff6c8a"
+    },
+    {
+      "path": "docs/desktop.md",
+      "bytes": 10986,
+      "sha256": "875152a95d2fc046d148c9aa4d5b0a433fdd05884086f7466ea5e6fff18e1b0d"
+    },
+    {
+      "path": "docs/images/README.md",
+      "bytes": 713,
+      "sha256": "b14c5462066c96197cdc5ffacee38521f1c377413344e4e5432e6e1ae3d9fb65"
+    },
+    {
+      "path": "docs/images/badge-0.svg",
+      "bytes": 464,
+      "sha256": "cd3c3a94e807cd4cb82ff3d167e88701b280c19991ff5019edeb83ff190d115e"
+    },
+    {
+      "path": "docs/images/badge-1.svg",
+      "bytes": 464,
+      "sha256": "604e42193cae2915ea5cd9cebbb2809190afac2a666a210c13dbbf5632f9d6a1"
+    },
+    {
+      "path": "docs/images/badge-2.svg",
+      "bytes": 475,
+      "sha256": "b24f34225d7eab05f69c6ef04dff1a5a424f6f9302d8989b8bb770b2425e7566"
+    },
+    {
+      "path": "docs/images/badge-3.svg",
+      "bytes": 490,
+      "sha256": "0ad3c6964165cfd6f283e5c64d6bacb1bcaa0ccb7a03ab05a6e7f81ffd92da00"
+    },
+    {
+      "path": "docs/images/badge-4.svg",
+      "bytes": 507,
+      "sha256": "bc4c2ab60291cf619f0cbe4afe6ee3fd8fad727e486572a9be18ff4c8380f872"
+    },
+    {
+      "path": "docs/images/badge-5.svg",
+      "bytes": 475,
+      "sha256": "691523c7943d79fed6683306c257c2f260c94355aa2a89f40b05f3f600aecbaf"
+    },
+    {
+      "path": "docs/images/badge-6.svg",
+      "bytes": 501,
+      "sha256": "3519c700698700132ef8565f930dc7ac841edab46edc3df56a6a64130289d10a"
+    },
+    {
+      "path": "docs/images/full-workflow-poster.jpg",
+      "bytes": 35653,
+      "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
+    },
+    {
+      "path": "docs/images/rd-panel.png",
+      "bytes": 266135,
+      "sha256": "a259d8f08375d1bd3949ead61625fb7f0641fde1b06a442dff6b1c394bf8b88d"
+    },
+    {
+      "path": "docs/images/robostudio-banner.png",
+      "bytes": 107365,
+      "sha256": "4847a7381bcb5eb9f0623f6d840bd1a77a159dc8d25533d203b7f5a0ebd2c78b"
+    },
+    {
+      "path": "docs/images/robostudio-banner.svg",
+      "bytes": 4595,
+      "sha256": "3377c3453bc5fde317b817235edb83a3508773554a96800589a94c2a0cb94a60"
+    },
+    {
+      "path": "docs/images/rs-workbench.png",
+      "bytes": 264661,
+      "sha256": "97a3a77f2e6aa57211a8d3160572d2bec6c05dcf65b951b2b68cd2820a57e248"
+    },
+    {
+      "path": "docs/images/xj-monogram.svg",
+      "bytes": 977,
+      "sha256": "fabcec1d32b34dd04429a4589954be733f03b8180301216a2652de3ec1dde19a"
+    },
+    {
+      "path": "docs/master-slave-teaching.md",
+      "bytes": 2836,
+      "sha256": "9deb0f8442673332bf55d7f29ac3c0063a41f010ef17bdc8f20dc7083c1d447b"
+    },
+    {
+      "path": "docs/mouse-hardware-control.md",
+      "bytes": 7583,
+      "sha256": "bda9e981d11a8a0debb699e0a900d70cf5b02d46305d1728c54398e9c6848617"
+    },
+    {
+      "path": "docs/open-source.md",
+      "bytes": 1627,
+      "sha256": "d6752dbfd784fe3da02ad3c613683a793e2072c2e62335e7c81fbd3d84bdf05f"
+    },
+    {
+      "path": "docs/project-navigation.md",
+      "bytes": 3899,
+      "sha256": "50581ed4cbcb78b9ee5835a9dabcbf4f85dc87c1be6b94c8056cf141df52b55b"
+    },
+    {
+      "path": "docs/project-overview.md",
+      "bytes": 4541,
+      "sha256": "01ce3ba30a8af26c17275da4b14033cefceaac70c99596627b29d85105209cb5"
+    },
+    {
+      "path": "docs/quickstart.md",
+      "bytes": 2616,
+      "sha256": "89e954a0d20e168a145e268c1f17e4ca50fb5d09ed6ee2ea09228c1922e6a94a"
+    },
+    {
+      "path": "docs/reorganization.md",
+      "bytes": 3947,
+      "sha256": "c8ce746ab24b701d6cbe4462234ea212df8d735c11f94c7fb3a9ca40487c8301"
+    },
+    {
+      "path": "docs/s1-can-protocol.md",
+      "bytes": 4422,
+      "sha256": "1106ba4f7073b39d333894fc2916bd74c6bfa251753a2d209c8be7a0e1f7e759"
+    },
+    {
+      "path": "docs/sdk-installation.md",
+      "bytes": 2718,
+      "sha256": "6ca2c38ea54e098c9c7be28fb94d1d07d2fc30db29e468876d230d912006209b"
+    },
+    {
+      "path": "docs/shared-old-sdk.md",
+      "bytes": 3522,
+      "sha256": "f8034ec74010ccf772c5c4513a0f9e275bd19ab294c1b9392b57a5c3a90b01c8"
+    },
+    {
+      "path": "docs/teleoperation.md",
+      "bytes": 9006,
+      "sha256": "953531923c9125903bf62a021ce97cd7518cbfa5e11c430bf1b835c82b9ff0c2"
+    },
+    {
+      "path": "docs/videos/README.md",
+      "bytes": 252,
+      "sha256": "2d65a75dfe69264c77321b7cb627ab6ba2cf37316927775963b39ff7e1eee36d"
+    },
+    {
+      "path": "docs/videos/robostudio-vr-full-workflow.mp4",
+      "bytes": 3097645,
+      "sha256": "7a198c72e0b4187435e2dd37b3ef5222ab2907a872e49c4c0a271c0f6dda090e"
+    },
+    {
+      "path": "docs/videos/video-manifest.json",
+      "bytes": 504,
+      "sha256": "edb0815294ca1d9041a23aeb77600285d2661e5be499676c3f840a2313b3a08c"
+    },
+    {
+      "path": "docs/vr-hardware-follow-tuning-20261119.md",
+      "bytes": 3555,
+      "sha256": "55f9f1780945e9da3b37994ae3fea420a1d31a13ac4949b8a570e678d136ac8f"
+    },
+    {
+      "path": "install-desktop.sh",
+      "bytes": 172,
+      "sha256": "90953f85f3203dd5b7504ccbf5746cd907861952d907e9075702d56378aa5333"
+    },
+    {
+      "path": "integrations/s1_sdk_extensions/device_session.py",
+      "bytes": 1564,
+      "sha256": "3482c733053f7d480090b5e6775b30e681f78fefa290e10728f37c4c28cecbb5"
+    },
+    {
+      "path": "integrations/s1_sdk_extensions/manifest.json",
+      "bytes": 770,
+      "sha256": "cc8be6e8cc4d487cd8a007496157fb8f81555220f9d3a67b0361d5de8a87de62"
+    },
+    {
+      "path": "integrations/s1_sdk_extensions/native_session.py",
+      "bytes": 1117,
+      "sha256": "dbb9fdd4d3043087671fd662c9e4cb743117e8788659c6ac275f0b7efd190921"
+    },
+    {
+      "path": "integrations/s1_sdk_extensions/safe_can.py",
+      "bytes": 9842,
+      "sha256": "7198798a0a2ca81bf397083c4c238b5f762015d72f5edf33b87bf1bcaaa81729"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 223,
+      "sha256": "26e64286d632d04de60c9e4f121d7f10b508aa39bc6b9dabf10214d19c3b3af4"
+    },
+    {
+      "path": "requirements-simulation.txt",
+      "bytes": 45,
+      "sha256": "62aa214bc729915a5ee0eff235d4b86c790cfae1a5f3d0849156708d1ee7d84e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 50,
+      "sha256": "7d3b8946fdec8e97f242fca82326a7ec01c448d20ce3132c028938865c0515a5"
+    },
+    {
       "path": "scripts/export-source.py",
       "bytes": 3251,
       "sha256": "0e39dd35c970559ec9f475eba02a0f1c2cb5b258028d90d3768132bafd2417c9"
@@ -463,34 +1613,19 @@
       "sha256": "bcd5b390c1606a3aefe53c8ffc796582a677d6fa04970fe4b7ed5a169460a354"
     },
     {
-      "path": "tools/build_collision_meshes.py",
-      "bytes": 680,
-      "sha256": "c5f345dc5b59c44742b0536d14d68f03c7787603777b8c3b9b58aab25bf587f0"
+      "path": "server.py",
+      "bytes": 18514,
+      "sha256": "c99888519057a85013917f1403bf2dd3b9406df37c5051158d1efded1550a1d8"
     },
     {
-      "path": "tools/generate_robodata_icon.py",
-      "bytes": 1668,
-      "sha256": "63fb92f38823fd338cc18a1f00e04c9127305570783a9410858fab57ff7efd15"
+      "path": "start-desktop.sh",
+      "bytes": 138,
+      "sha256": "aff6c620213aa8625c85e1ea8c2b7cfee926228afbd2db986591863d21e85c0f"
     },
     {
-      "path": "tools/generate_studio_icon.py",
-      "bytes": 1650,
-      "sha256": "24c12e938f717d886cac1b8914e7bd0e507832c0d73be2421ce877b2b07c376b"
-    },
-    {
-      "path": "tools/import_s1_model.py",
-      "bytes": 3176,
-      "sha256": "5f84978148a0f030ffcb58d73e6cca0080a053bc1ae76d12d912128668d262fb"
-    },
-    {
-      "path": "tools/install_desktop_runtime.py",
-      "bytes": 2040,
-      "sha256": "76512ce371c475eb36a964c4ee2dfd42db0ae6a61f10dd2636357161e4fd4003"
-    },
-    {
-      "path": "tools/install_s1_extensions.py",
-      "bytes": 2214,
-      "sha256": "f520a24bf088378cd15c88b8b2b76f821d7d65129fc2d7348458b2be0830e648"
+      "path": "start-studio.sh",
+      "bytes": 169,
+      "sha256": "19c97f4eaf853698c87d7ae7d8b297152f88b13dcd1e67b8a7cf5409ed974730"
     },
     {
       "path": "tests/_support.py",
@@ -648,1132 +1783,37 @@
       "sha256": "10fae098e32f8624e920aaa3df8c8faac5d7903d203e1097cc9298ed03879ce1"
     },
     {
-      "path": "docs/architecture.md",
-      "bytes": 3908,
-      "sha256": "469854d16710ae35b18021ae994418765b745c985f4e5a2e87dfa0f856bb6f95"
+      "path": "tools/build_collision_meshes.py",
+      "bytes": 680,
+      "sha256": "c5f345dc5b59c44742b0536d14d68f03c7787603777b8c3b9b58aab25bf587f0"
     },
     {
-      "path": "docs/arm-configuration.md",
-      "bytes": 10335,
-      "sha256": "cfa709f844abeb67b25cd354e018d20a597af1b0a4ce534fb5495e8fceea2465"
+      "path": "tools/generate_robodata_icon.py",
+      "bytes": 1668,
+      "sha256": "63fb92f38823fd338cc18a1f00e04c9127305570783a9410858fab57ff7efd15"
     },
     {
-      "path": "docs/configuration.md",
-      "bytes": 2582,
-      "sha256": "15d427ce5d0396fff28aceceb5a7b96600bdc2e8a254027a2ab41035fcff6c8a"
+      "path": "tools/generate_studio_icon.py",
+      "bytes": 1650,
+      "sha256": "24c12e938f717d886cac1b8914e7bd0e507832c0d73be2421ce877b2b07c376b"
     },
     {
-      "path": "docs/desktop.md",
-      "bytes": 10986,
-      "sha256": "875152a95d2fc046d148c9aa4d5b0a433fdd05884086f7466ea5e6fff18e1b0d"
+      "path": "tools/import_s1_model.py",
+      "bytes": 3176,
+      "sha256": "5f84978148a0f030ffcb58d73e6cca0080a053bc1ae76d12d912128668d262fb"
     },
     {
-      "path": "docs/master-slave-teaching.md",
-      "bytes": 2836,
-      "sha256": "9deb0f8442673332bf55d7f29ac3c0063a41f010ef17bdc8f20dc7083c1d447b"
+      "path": "tools/install_desktop_runtime.py",
+      "bytes": 2040,
+      "sha256": "76512ce371c475eb36a964c4ee2dfd42db0ae6a61f10dd2636357161e4fd4003"
     },
     {
-      "path": "docs/mouse-hardware-control.md",
-      "bytes": 7583,
-      "sha256": "bda9e981d11a8a0debb699e0a900d70cf5b02d46305d1728c54398e9c6848617"
-    },
-    {
-      "path": "docs/open-source.md",
-      "bytes": 1627,
-      "sha256": "d6752dbfd784fe3da02ad3c613683a793e2072c2e62335e7c81fbd3d84bdf05f"
-    },
-    {
-      "path": "docs/project-navigation.md",
-      "bytes": 3899,
-      "sha256": "50581ed4cbcb78b9ee5835a9dabcbf4f85dc87c1be6b94c8056cf141df52b55b"
-    },
-    {
-      "path": "docs/project-overview.md",
-      "bytes": 4541,
-      "sha256": "01ce3ba30a8af26c17275da4b14033cefceaac70c99596627b29d85105209cb5"
-    },
-    {
-      "path": "docs/quickstart.md",
-      "bytes": 2616,
-      "sha256": "89e954a0d20e168a145e268c1f17e4ca50fb5d09ed6ee2ea09228c1922e6a94a"
-    },
-    {
-      "path": "docs/reorganization.md",
-      "bytes": 3947,
-      "sha256": "c8ce746ab24b701d6cbe4462234ea212df8d735c11f94c7fb3a9ca40487c8301"
-    },
-    {
-      "path": "docs/s1-can-protocol.md",
-      "bytes": 4422,
-      "sha256": "1106ba4f7073b39d333894fc2916bd74c6bfa251753a2d209c8be7a0e1f7e759"
-    },
-    {
-      "path": "docs/sdk-installation.md",
-      "bytes": 2718,
-      "sha256": "6ca2c38ea54e098c9c7be28fb94d1d07d2fc30db29e468876d230d912006209b"
-    },
-    {
-      "path": "docs/shared-old-sdk.md",
-      "bytes": 3522,
-      "sha256": "f8034ec74010ccf772c5c4513a0f9e275bd19ab294c1b9392b57a5c3a90b01c8"
-    },
-    {
-      "path": "docs/teleoperation.md",
-      "bytes": 9006,
-      "sha256": "953531923c9125903bf62a021ce97cd7518cbfa5e11c430bf1b835c82b9ff0c2"
-    },
-    {
-      "path": "docs/vr-hardware-follow-tuning-20261119.md",
-      "bytes": 3555,
-      "sha256": "55f9f1780945e9da3b37994ae3fea420a1d31a13ac4949b8a570e678d136ac8f"
-    },
-    {
-      "path": "config/arms.example.json",
-      "bytes": 2632,
-      "sha256": "b9f9ee587aefe9cd7b0092ef1f387f36a119c6530ecf886797b6b25f1c12ab0a"
-    },
-    {
-      "path": "config/gripper-calibration.example.json",
-      "bytes": 33,
-      "sha256": "01a15bec15cc21335c73a25d25a6077fcd65d82b282581d580e3ef6736d63ef7"
-    },
-    {
-      "path": "config/project-shortcuts.example.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
-    },
-    {
-      "path": "config/runtime.example.json",
-      "bytes": 43,
-      "sha256": "f6475f62ce6a6916467661d7d7d3e9b178f33c7d18b2af7d16252d146b7e8a1f"
-    },
-    {
-      "path": "config/settings.example.json",
-      "bytes": 220,
-      "sha256": "47aa42aebd5e9fe1336c34179135f5542bb1a9ef3a92db1013265c6f4012a9b0"
-    },
-    {
-      "path": ".github/workflows/checks.yml",
-      "bytes": 386,
-      "sha256": "938fd00e4547bfe763b1fae8df07b0d7a106b33448ff4ad11fa98bd326915cf8"
-    },
-    {
-      "path": "integrations/s1_sdk_extensions/device_session.py",
-      "bytes": 1564,
-      "sha256": "3482c733053f7d480090b5e6775b30e681f78fefa290e10728f37c4c28cecbb5"
-    },
-    {
-      "path": "integrations/s1_sdk_extensions/manifest.json",
-      "bytes": 770,
-      "sha256": "cc8be6e8cc4d487cd8a007496157fb8f81555220f9d3a67b0361d5de8a87de62"
-    },
-    {
-      "path": "integrations/s1_sdk_extensions/native_session.py",
-      "bytes": 1117,
-      "sha256": "dbb9fdd4d3043087671fd662c9e4cb743117e8788659c6ac275f0b7efd190921"
-    },
-    {
-      "path": "integrations/s1_sdk_extensions/safe_can.py",
-      "bytes": 9842,
-      "sha256": "7198798a0a2ca81bf397083c4c238b5f762015d72f5edf33b87bf1bcaaa81729"
-    },
-    {
-      "path": "VR remote control/README.md",
-      "bytes": 4477,
-      "sha256": "d514fe8fda18930d62d651776c105e66e0ef1dde30f1de12fdd34226b05010fe"
-    },
-    {
-      "path": "VR remote control/CONTRIBUTING.md",
-      "bytes": 1152,
-      "sha256": "38295b7e167102d4cca92252be2dc71f080ebc3429de70436de9942b6cb4fd78"
-    },
-    {
-      "path": "VR remote control/THIRD_PARTY_NOTICES.md",
-      "bytes": 1443,
-      "sha256": "2befd7cf4db050c8f5e332b44b4e010e751fd1bba2a1b1b76b284662f379b247"
-    },
-    {
-      "path": "VR remote control/.gitignore",
-      "bytes": 1117,
-      "sha256": "6b0fa9c281992df1c8c9566e6742e5e6a6c9e932d5873a9011adab07b19da005"
-    },
-    {
-      "path": "VR remote control/.gitattributes",
-      "bytes": 184,
-      "sha256": "11b43211e2f4ce7696e3ee4515a3b15730250c1b3081e090931c743f94ed245c"
-    },
-    {
-      "path": "VR remote control/pyproject.toml",
-      "bytes": 548,
-      "sha256": "84eaace35bc3e2f6fed3453e32d46e5f454041ecb08a961592b764454fc6ff9f"
-    },
-    {
-      "path": "VR remote control/requirements.txt",
-      "bytes": 19,
-      "sha256": "9ec828179a682425537349fb41440b48a47b1ef006b7b3e1d1542566d3ec6943"
-    },
-    {
-      "path": "VR remote control/start-bridge.sh",
-      "bytes": 172,
-      "sha256": "16a99747ba2da0150ea0ab47cae2444ac6297375050740fb4fdc832e341e2b25"
-    },
-    {
-      "path": "VR remote control/quest-unmounted.sh",
-      "bytes": 179,
-      "sha256": "a5d31cd1f0e905e5173d8891736bbfbea8cd53112b90450eb0cd8117e3439b79"
-    },
-    {
-      "path": "VR remote control/bridge_service.py",
-      "bytes": 3614,
-      "sha256": "d48f97b558c299bf4c5565f58782acc70855c3427d475afae5c9cf11a994db5a"
-    },
-    {
-      "path": "VR remote control/hardware_control.py",
-      "bytes": 15810,
-      "sha256": "aa94674186bd65dbb29416b94ef4e8eb32668849bf23b91674426b375c78b326"
-    },
-    {
-      "path": "VR remote control/bridge/__init__.py",
-      "bytes": 62,
-      "sha256": "5247191734be8fc4272811a815b6b31bc928d15d591aa084b2fe5393e80a382b"
-    },
-    {
-      "path": "VR remote control/bridge/adb_device.py",
-      "bytes": 1121,
-      "sha256": "b42a4b843c606ae08036620a10f176a312881ebe4643fac9f8ed6612909cc867"
-    },
-    {
-      "path": "VR remote control/bridge/client_setup.py",
-      "bytes": 4241,
-      "sha256": "5416642cad40af5f7daa4bc5b64bf9e7e144b94a37b9bc538e3dd307bc1ad1c5"
-    },
-    {
-      "path": "VR remote control/bridge/connection.py",
-      "bytes": 1549,
-      "sha256": "a6d028b8c6dba1e59866fbf7a9fdf2fb897176f5ef7b7ffb1b3029a4b2939939"
-    },
-    {
-      "path": "VR remote control/bridge/index.html",
-      "bytes": 9357,
-      "sha256": "690479e8cba7b917d4c70145f7b1573caa6ea29337cf45af818d4b0e4d979eca"
-    },
-    {
-      "path": "VR remote control/bridge/mapping.py",
-      "bytes": 3446,
-      "sha256": "ed41ed5e88a539813d85a382fd5a85d2d0d243fc435fc0c71eccae4345fcb844"
-    },
-    {
-      "path": "VR remote control/bridge/paths.py",
-      "bytes": 884,
-      "sha256": "f31c8a840e27c41cc7633e34769f8f4f7ee4537c91e5ea279f6250b510d99d8f"
-    },
-    {
-      "path": "VR remote control/bridge/pose_controls.py",
-      "bytes": 2569,
-      "sha256": "f9b7d730b8a9e077bc52c84f5d16b65282e3ab5d991caba13dbb4310c1a73f11"
-    },
-    {
-      "path": "VR remote control/bridge/protocol.py",
-      "bytes": 1597,
-      "sha256": "84fd0dbd3b9924057d8569d522251ac679dbcdd5b1916d77fd099bd63e289ff4"
-    },
-    {
-      "path": "VR remote control/bridge/readonly_guard.py",
-      "bytes": 1545,
-      "sha256": "e9009242fb648887af2ae6911f8c1ab66f91aaa756409ac54a6554a5c83effe8"
-    },
-    {
-      "path": "VR remote control/bridge/recording.py",
-      "bytes": 3202,
-      "sha256": "09854af624a9803bdd057d0d53ab5fed5052af8396cf4974b48375e7f382be26"
-    },
-    {
-      "path": "VR remote control/bridge/server.py",
-      "bytes": 17687,
-      "sha256": "c319943b533a43955ef57d1b3c27983a8037b40bfcebac73da5d25595151c291"
-    },
-    {
-      "path": "VR remote control/bridge/simulation_link.py",
-      "bytes": 11289,
-      "sha256": "041fd882be27409d9ce6565e2a67da1aae5549e6ceaf04cb49c2ae3620219d70"
-    },
-    {
-      "path": "VR remote control/bridge/teaching_capture.py",
-      "bytes": 6832,
-      "sha256": "0255768ef4725af66bcca5baf41d6690d3871fea98c7550c57d36db7494fbb0e"
-    },
-    {
-      "path": "VR remote control/bridge/teaching_reader.py",
-      "bytes": 3569,
-      "sha256": "3cd3de8746827c965a2390df16cacbe35bd4626b86bf750669433f6bb66ae506"
-    },
-    {
-      "path": "VR remote control/bridge/wear_mode.py",
-      "bytes": 6862,
-      "sha256": "2c0c668e2d5294338ce799ab210fe7a7be289681e9a360d15c65266fff221241"
-    },
-    {
-      "path": "VR remote control/ui/hardware.js",
-      "bytes": 10495,
-      "sha256": "9e8f18d87aa5c00c6823e9895e756d1b7c574afef82656b03f6daf070c7ee783"
-    },
-    {
-      "path": "VR remote control/ui/panels.css",
-      "bytes": 1721,
-      "sha256": "18e010ec3e8235e635598865b86f3f23d281e591f0250c87eafb68834f8a9993"
-    },
-    {
-      "path": "VR remote control/ui/panels.js",
-      "bytes": 16570,
-      "sha256": "1b916562821716f2f90b22d24005c382b880d85e3b090c0fea5b224bdd455083"
-    },
-    {
-      "path": "VR remote control/scripts/build-quest.sh",
-      "bytes": 635,
-      "sha256": "382ce7484d4bbd3d036bc17b9df6068979913ada0afd3a09067b532d8c14e56e"
-    },
-    {
-      "path": "VR remote control/scripts/export-source.py",
-      "bytes": 3630,
-      "sha256": "a5dad7770d6172d058c270494f020f45ac89b383263470157c1987d5bea57b9d"
-    },
-    {
-      "path": "VR remote control/scripts/python-env.sh",
-      "bytes": 339,
-      "sha256": "75f39e6588ab8e5e0b88d2b12bb79495da4515449993f019cf99174558fab575"
-    },
-    {
-      "path": "VR remote control/scripts/quest-unmounted.sh",
-      "bytes": 1739,
-      "sha256": "6231e3bf684dd842379309c9f17500588b2f8a65f6ffdcf244fbe7be2dceb222"
-    },
-    {
-      "path": "VR remote control/scripts/start-bridge.sh",
-      "bytes": 474,
-      "sha256": "0dc9820ee112e8b8ffffb8c0fb798c4b853f0dd2c94b4451be94ff5aa120636c"
-    },
-    {
-      "path": "VR remote control/scripts/test.sh",
-      "bytes": 1013,
-      "sha256": "b5dd5eae1bf45a091fe923a22f386445140abd067e7b4f2efb0fca923f87ad4d"
-    },
-    {
-      "path": "VR remote control/tests/test_bridge.py",
-      "bytes": 5287,
-      "sha256": "c7b33ac3c2b588837102a1933c621ee12ce7bcebd27de0609ad33cb284dfb6ab"
-    },
-    {
-      "path": "VR remote control/tests/test_bridge_service.py",
-      "bytes": 4487,
-      "sha256": "dfc0d5e6c4cb44c392e36e03aabb8274bfdd7ec89e033871ade262bab8902600"
-    },
-    {
-      "path": "VR remote control/tests/test_capture_chrome.py",
-      "bytes": 5361,
-      "sha256": "a3ece7a61f101536cf6509196edd18087ec7fdf60f819c4551506c2f1c447beb"
-    },
-    {
-      "path": "VR remote control/tests/test_client_setup.py",
-      "bytes": 5426,
-      "sha256": "0f0632108c3cd48d69cd26f9d09221652ed09f5528e590f91188cfd2009c83f5"
-    },
-    {
-      "path": "VR remote control/tests/test_mapping.py",
-      "bytes": 3101,
-      "sha256": "bcb0eaae0f21f35837bb5617a19737216b27e43b73705ceaf77bf566602034fc"
-    },
-    {
-      "path": "VR remote control/tests/test_pose_controls.py",
-      "bytes": 2041,
-      "sha256": "b13153ad08aa406727a3dbe40e57b5a304b13fc81dff2c0ffc1869fd079770d9"
-    },
-    {
-      "path": "VR remote control/tests/test_project_layout.py",
-      "bytes": 3705,
-      "sha256": "d3d37b60885a669799194fff0ead94198a3ee4211aa18bffdfeafe679f1efdc4"
-    },
-    {
-      "path": "VR remote control/tests/test_robodata.py",
-      "bytes": 4262,
-      "sha256": "0a8a6b1139e7a3917861646fe1bdca8b8d2086b16faf6f6934d86da3b808646e"
-    },
-    {
-      "path": "VR remote control/tests/test_setup_chrome.py",
-      "bytes": 6528,
-      "sha256": "ac56953424f62ce8c46bbc31c909d3ec167bbf6e0858e45cc0960b60ae1617ae"
-    },
-    {
-      "path": "VR remote control/tests/test_simulation_link.py",
-      "bytes": 3150,
-      "sha256": "e08450848d72786eddfaf95c52523598744b0dbebccbbd80244809c1e5f28c4a"
-    },
-    {
-      "path": "VR remote control/tests/test_teaching_capture.py",
-      "bytes": 4640,
-      "sha256": "1815a30da1752a3b02c9218c661dcfa7948a1b3fe3b550c0ab1b118dfeaada1e"
-    },
-    {
-      "path": "VR remote control/tests/test_wear_mode.py",
-      "bytes": 3713,
-      "sha256": "f6a18e7cecb5c2798409626fd2ba167d2765f672bf75781b9d7cefc839240eab"
-    },
-    {
-      "path": "VR remote control/tests_hardware/browser-vr-hardware.js",
-      "bytes": 6267,
-      "sha256": "35f149a48baa5b2324b0419f65872cd3541821ee64d4fcfccab4546aa2d05ff9"
-    },
-    {
-      "path": "VR remote control/tests_hardware/test_vr_hardware.py",
-      "bytes": 18866,
-      "sha256": "a6bc0cb4bdf210fb9b6c27668905dd70216e857a08d76a8a40e62f2bfbb1e333"
-    },
-    {
-      "path": "VR remote control/tests_hardware/test_vr_hardware_chrome.py",
-      "bytes": 6249,
-      "sha256": "c8f33c4f0e3a9f0c700949b9e26294d0ee9d472deb9e6a24769b1b4bc71a9bce"
-    },
-    {
-      "path": "VR remote control/config/70-quest.rules",
-      "bytes": 134,
-      "sha256": "79c8420943256e8e5a6083427914afd21fb06abef8e84730975a076a37b50ab9"
-    },
-    {
-      "path": "VR remote control/config/connection.example.json",
-      "bytes": 35,
-      "sha256": "8add2834fcbd4f8af6d2bce7d9eb1a57e73a2f1fcffceb123ae272a0ac5282af"
-    },
-    {
-      "path": "VR remote control/config/wireless-adb.example.json",
-      "bytes": 43,
-      "sha256": "ee6f7bad6b7ca4bc4234d0338c18748b03ad6ab07221cd74a8fbb78cbc42216f"
-    },
-    {
-      "path": "VR remote control/docs/RoboData.md",
-      "bytes": 9467,
-      "sha256": "f8cc323534ce03dd4ee1f3f74eab6ec1557288718e88c5dff538fce650c18b9b"
-    },
-    {
-      "path": "VR remote control/docs/architecture.md",
-      "bytes": 1426,
-      "sha256": "49f5c3d1c4f0826da3c33042f2d6fdffe7d7fd127f1f46da2ac9728154b1944b"
-    },
-    {
-      "path": "VR remote control/docs/configuration.md",
-      "bytes": 1951,
-      "sha256": "07addc8294fbe62607287bd8c0d5e4efa74e271cf323deac6fb17b2bc7fb90e1"
-    },
-    {
-      "path": "VR remote control/docs/hardware-control.md",
-      "bytes": 7609,
-      "sha256": "c66600a1298fad2697196353031663fa2668ca732eaf5121a981da54c3ab225a"
-    },
-    {
-      "path": "VR remote control/docs/hotspot-latency.md",
-      "bytes": 1708,
-      "sha256": "26ee15ffc539e5f6dbe25502d4a068b4874d63f9dc1a73fa3f488a3f4b321a75"
-    },
-    {
-      "path": "VR remote control/docs/protocol.md",
-      "bytes": 1352,
-      "sha256": "530730e96356282dc1f4359fd645c6c53339e020cfa945b4ef199eee1a134582"
-    },
-    {
-      "path": "VR remote control/docs/quickstart.md",
-      "bytes": 2077,
-      "sha256": "27df60189561f993ae9a22fbadb47029faff5bfbffa76aade5e3742f9260f127"
-    },
-    {
-      "path": "VR remote control/docs/reorganization.md",
-      "bytes": 3307,
-      "sha256": "b00a2332f9fc0dff202b293ef742c405819ed1d2d31ea527d88efc5f82afe96f"
-    },
-    {
-      "path": "VR remote control/docs/unmounted-capture.md",
-      "bytes": 2640,
-      "sha256": "c95416e006de62add956df7ef23e2fd36ad4feeea3fed3bb6174644c0889b0d3"
-    },
-    {
-      "path": "VR remote control/docs/usb-telemetry.md",
-      "bytes": 2035,
-      "sha256": "20caa02b45560b96515be19aee128091aced11ceb4e58caebfd1f7ce02325786"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataBackground.png",
-      "bytes": 1878,
-      "sha256": "d17ab9b1d389c20c5440a5534efd0b28ef580265c0f82b64ad5cc8ee912ff0a4"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataBackground.png.meta",
-      "bytes": 3009,
-      "sha256": "ba14c347192da09a943b44a7bd5d578ad9b1857e56dff45771447f90af4a5997"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataForeground.png",
-      "bytes": 18137,
-      "sha256": "62bbd85140657376662a88bc6be87fd420daa73d2aa9bf65707bbc17f65366d3"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataForeground.png.meta",
-      "bytes": 3009,
-      "sha256": "f58ac8ff3bc89efa8b29c35aafc8229a14cde2393299bc78ccfb620bf6730b2c"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataIcon.png",
-      "bytes": 39717,
-      "sha256": "956063733534db2b05eabc3d80f58d4e5ea58e4cd7b053e0e43cd395632e4a10"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding/RoboDataIcon.png.meta",
-      "bytes": 3009,
-      "sha256": "ffb12aff7e7aba5ffad2f15150da8bc9bd2c8fe461a00cee0f3dc031eaa14a9e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Branding.meta",
-      "bytes": 172,
-      "sha256": "e1cff455d06900f2983d2299ca63c11f1217f06c0a40dd0983e5691b7fe89bbd"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/CompositionLayers/UserSettings.meta",
-      "bytes": 172,
-      "sha256": "b4cc2f786cd4e9850149493eacbb275cf68f3142c282073cf06cc9a7b491ff3d"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/CompositionLayers.meta",
-      "bytes": 172,
-      "sha256": "8f2a3cdbd56471e6730c7bec9fcc60ab888cc76c7a16cc00ee3ff251fe6f5a62"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/InputSystem_Actions.inputactions",
-      "bytes": 41005,
-      "sha256": "1c6cbb519d65ecfe19a29231735b7f54741a20ac1a8ad4f46a18e1bfb28a3c39"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/InputSystem_Actions.inputactions.meta",
-      "bytes": 376,
-      "sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Readme.asset",
-      "bytes": 1144,
-      "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Readme.asset.meta",
-      "bytes": 182,
-      "sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont-LICENSE.txt",
-      "bytes": 14716,
-      "sha256": "5bb218343ded506b258d86186d460fc47d9b6b28f0e642cf32676c396b7df763"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont-LICENSE.txt.meta",
-      "bytes": 158,
-      "sha256": "0a055c62329feb78d245faf1fd6a123f93e072e9e7ecb8a8bb28cc38ff166123"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont.otf",
-      "bytes": 16437340,
-      "sha256": "48b8d0ad46a14360cb8b50d5aa4c3be7901e0e2642e9960a172f709a7751b595"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataFont.otf.meta",
-      "bytes": 481,
-      "sha256": "d69e80f1c8bf337ec0dc9122164a77e0a2d14205f8a6e0c296f3f2c5124f7647"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataPointer.mat",
-      "bytes": 1878,
-      "sha256": "4eec7f0aefbd59a5c7ee3cb0a3462bbaba807a6601cb910170ad5d2c7035e8ee"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources/RoboDataPointer.mat.meta",
-      "bytes": 188,
-      "sha256": "e9af1835dbf08b852fbb319d900a10d80de57d25330ede7b1eb032abf97474fb"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Resources.meta",
-      "bytes": 172,
-      "sha256": "c4789b979fc39e149742f9735e3f6eb8dedb2c75b92092761b9cd18af2c7ede5"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerDiagnostics.cs",
-      "bytes": 5881,
-      "sha256": "38a71870f51303e9159d43c50fb4a5a381402b3d3a6dc62e211386b1339d636c"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerDiagnostics.cs.meta",
-      "bytes": 59,
-      "sha256": "e22785b886aeb7ef6294c37c24746360563b819bd0925f7761a7479b1d480297"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerInput.cs",
-      "bytes": 4510,
-      "sha256": "26ee8a083d14a01a0db27532569df2b1c56a61710a73d8b71c5110de48f0fbc7"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/ControllerInput.cs.meta",
-      "bytes": 59,
-      "sha256": "fc7b5036729c41cfbc23ae8afcb6d87cd25c4ed0476c87b36c9065a84ca82de3"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/BuildRoboData.cs",
-      "bytes": 3391,
-      "sha256": "2d0d1642c33c0697d25ca6e29625c11c105a40b45fd59aca0d969917484d387b"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/BuildRoboData.cs.meta",
-      "bytes": 59,
-      "sha256": "6a557f6ea0a6b54c94f1db97c1d767b9d80144b29bda0d06da12ccca6b2a2ad0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/CreateDiagnosticsScene.cs",
-      "bytes": 3505,
-      "sha256": "3bd8b058542ca8e5e7e7d4c00434e9f6ed15a17016908739025705a59a4b1eef"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/CreateDiagnosticsScene.cs.meta",
-      "bytes": 59,
-      "sha256": "404be76dfec8ed62a5c983227f4214b71ceb21cb567d2995c79e2903bb3aee80"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/PreviewRoboData.cs",
-      "bytes": 3241,
-      "sha256": "5eb3ef9391e7929b0f18e2a9c65e12703b41208764b05e8bdb0f7f4c7d06ea54"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/PreviewRoboData.cs.meta",
-      "bytes": 59,
-      "sha256": "7550ae0c73a70cd2e68feb93b7eb7f8a42979a37707bf039c6011af9e1d12aaf"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateControllerRecovery.cs",
-      "bytes": 4891,
-      "sha256": "2f65087538ba5f28bf0c3910863abacbeb7604480f047a6e4f386db25f4af5e9"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateControllerRecovery.cs.meta",
-      "bytes": 59,
-      "sha256": "ef1f63063ef9c5b660b87bda69d569efe6ee750b222187f52dcab87f1cff9d28"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateDiagnosticsScene.cs",
-      "bytes": 1540,
-      "sha256": "b08fccf2c6fa5568995a4fbbb969445303761c3a717df44b0a43dff17f632c3e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateDiagnosticsScene.cs.meta",
-      "bytes": 59,
-      "sha256": "4d1d30059f017b8d0faf4a914fa6514357a132b87e0cc2a8f4aa3fb271f40c84"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateRightHandShortcuts.cs",
-      "bytes": 3278,
-      "sha256": "81694c5d60fadc49ba1d1be7534a9773f782e4b51cdad9a79f1803698a35bf38"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor/ValidateRightHandShortcuts.cs.meta",
-      "bytes": 59,
-      "sha256": "f7b299c74582406ac62930f58e82a40629e752266ee6ff979696b515926f7fe6"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/Editor.meta",
-      "bytes": 172,
-      "sha256": "43d80fe84ab92c44d20f79fc74fdd081cf12ad7ecc9a0d99f839c0049571b145"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/QuestTelemetrySender.cs",
-      "bytes": 14657,
-      "sha256": "7271000eea214910db83fdbd4654c87fac6f2bcc467ae684fa23f8c3c3f00bca"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/QuestTelemetrySender.cs.meta",
-      "bytes": 59,
-      "sha256": "0846ba8592d419bc9d605344413fab565382a161b6f94c50098ddc0084075c5e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RightHandShortcuts.cs",
-      "bytes": 799,
-      "sha256": "4d73f4041b68fba0b693ac503befb0f301c127aff523996ca1f867c3c6eea5ca"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RightHandShortcuts.cs.meta",
-      "bytes": 59,
-      "sha256": "19db2c96dcd539bc9efbdfbd315f94e6e70bfeb03aa2cdfdf84f1494a77f8824"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RoboDataPanel.cs",
-      "bytes": 16556,
-      "sha256": "3c06817fcc4b4dde84b9838f7ac9342fc4544ecfdebc531e0ecc907ab49a1adb"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR/RoboDataPanel.cs.meta",
-      "bytes": 59,
-      "sha256": "8a775e59ec4f0fa693abcb27b7e6233250ec57d17e10de48cce51ea1ca828b70"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/RoboStudioVR.meta",
-      "bytes": 172,
-      "sha256": "349368fb96fe03d5618b0610fe940e26c24a3d0e8f1e3c5c076c571b92728c71"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Scenes/ControllerDiagnostics.unity",
-      "bytes": 15036,
-      "sha256": "b1a41d9a92230e0d8ac5ec0d4c0b50d240538bfe129791ae531a4373541b1ad8"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Scenes/ControllerDiagnostics.unity.meta",
-      "bytes": 155,
-      "sha256": "36883569fca84c653643b46687a365545d67c03e02e31d93f985ddadb8381b8a"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Scenes/SampleScene.unity",
-      "bytes": 11413,
-      "sha256": "07fce8b04804ddccb3026db5b43d8dc41ba138e49d50d36a5c24877081eacdca"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Scenes/SampleScene.unity.meta",
-      "bytes": 155,
-      "sha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Scenes.meta",
-      "bytes": 172,
-      "sha256": "35c01d5c73a4822962ee4142fc1e961c9a66654a6854ed07ec2b8ed84e6857e3"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/DefaultVolumeProfile.asset",
-      "bytes": 24035,
-      "sha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/DefaultVolumeProfile.asset.meta",
-      "bytes": 189,
-      "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_RPAsset.asset",
-      "bytes": 4648,
-      "sha256": "209700d758229a3957d654e2ef5086149d5114f4d64fe354faaaaa2ec5d48597"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_RPAsset.asset.meta",
-      "bytes": 189,
-      "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_Renderer.asset",
-      "bytes": 1713,
-      "sha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/Mobile_Renderer.asset.meta",
-      "bytes": 189,
-      "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_RPAsset.asset",
-      "bytes": 4669,
-      "sha256": "08a9c221b335a0dbca1b6967b7de5c42b957c5f0d5e43da9edb36ca8fce5966b"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_RPAsset.asset.meta",
-      "bytes": 189,
-      "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_Renderer.asset",
-      "bytes": 3439,
-      "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/PC_Renderer.asset.meta",
-      "bytes": 189,
-      "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/SampleSceneProfile.asset",
-      "bytes": 3703,
-      "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/SampleSceneProfile.asset.meta",
-      "bytes": 182,
-      "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
-      "bytes": 26038,
-      "sha256": "71cd1898a8ad15c7e1c518d1ff5cb4b925911da1ed8b6f76945a87d855c82dc6"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
-      "bytes": 189,
-      "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/Settings.meta",
-      "bytes": 172,
-      "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons/URP.png",
-      "bytes": 24069,
-      "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons/URP.png.meta",
-      "bytes": 3156,
-      "sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Icons.meta",
-      "bytes": 193,
-      "sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Layout.wlt",
-      "bytes": 15479,
-      "sha256": "0a18bf035aa7ce914f19f7ce6b60a5a2d33e2371af6f492a8ea7a1bc78755b8b"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Layout.wlt.meta",
-      "bytes": 176,
-      "sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
-      "bytes": 6677,
-      "sha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
-      "bytes": 264,
-      "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Editor.meta",
-      "bytes": 193,
-      "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Readme.cs",
-      "bytes": 302,
-      "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts/Readme.cs.meta",
-      "bytes": 317,
-      "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo/Scripts.meta",
-      "bytes": 193,
-      "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/TutorialInfo.meta",
-      "bytes": 172,
-      "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders/OpenXRLoader.asset",
-      "bytes": 452,
-      "sha256": "3dade780ddfc9ef1e12c3275788df48569ad586f9310d96cd91105e1c5739a7a"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders/OpenXRLoader.asset.meta",
-      "bytes": 189,
-      "sha256": "5f7edb8e84e97095e649018cacb09a6fdef57cd52e9c91c0cc48e626502c679e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Loaders.meta",
-      "bytes": 172,
-      "sha256": "30ab55ecc5613803124d4d80da0d62b004c6d181af995b7f96aef2f4188b2abd"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources/XRSimulationRuntimeSettings.asset",
-      "bytes": 1920,
-      "sha256": "b5d862588e148e5370808d52abc0f8ec584ec8549a436dddc7044fb14faea9d5"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources/XRSimulationRuntimeSettings.asset.meta",
-      "bytes": 189,
-      "sha256": "52d025664f531467e6eeade3d62bcc60f2b9390faa57f12470548624665c333f"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Resources.meta",
-      "bytes": 172,
-      "sha256": "c80ff358f80b65a5256a6dd1febc4b49535895ec7abe724694d3cd983dfed8ef"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Editor Settings.asset",
-      "bytes": 581,
-      "sha256": "0a04d3014504fca0e88ace93470aa51e1a00f408d631b5b34860128fd79ec2ca"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Editor Settings.asset.meta",
-      "bytes": 189,
-      "sha256": "ec686c28e9ff50ad9388a00aa67b1da9ba3494115b8f381a6dbdc2b10975c7f0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Package Settings.asset",
-      "bytes": 46005,
-      "sha256": "3ec17837ae9d478fc4412766d248f683e33f2a8edde782ad59c3289c4da77d8e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings/OpenXR Package Settings.asset.meta",
-      "bytes": 189,
-      "sha256": "82b4a1768e095875418161dfe266117b1122c056d05916431d94c255a13e6b14"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 1.meta",
-      "bytes": 172,
-      "sha256": "4c16f08b959eb94c0ed5c972c680c7dba652b2bbd2326dd96d8e5a4bdfcf2ad2"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 2.meta",
-      "bytes": 172,
-      "sha256": "d75d406fb0a07cbc0cc965050f267829f09700db4a1b88e8e8962eb6467c49c0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 3.meta",
-      "bytes": 172,
-      "sha256": "58b3d21f1e7d965ecaa8f4bd71298bb30d80c623b716c74fcdf8263b128f63b1"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings 4.meta",
-      "bytes": 172,
-      "sha256": "6dfc79b09786c482ee022b6df32b0531308a4e065c084e83ce55307f52d8b5f5"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/Settings.meta",
-      "bytes": 172,
-      "sha256": "529f0115dc359251b6e13aadaf010da457d2859ada66c39254ab495d830d3289"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset",
-      "bytes": 1159,
-      "sha256": "01ee1be7b338cc222fc87c63f8832ec37345ad067325ab10fcce4ad0d2110969"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset.meta",
-      "bytes": 189,
-      "sha256": "0b83497d935914725ab678ad142ee4db8ffbfe0a23284b4f20948adf55a32881"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings/Resources.meta",
-      "bytes": 172,
-      "sha256": "a5a998f8e0a0d9888d19883dcebd24efd5246ba7fbe7514f3d46b769a20f0a43"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/UserSimulationSettings.meta",
-      "bytes": 172,
-      "sha256": "604cc85de79d21182978bf622e13d4ae898c8c72e7120f775ef84c96cac81c01"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/XRGeneralSettingsPerBuildTarget.asset",
-      "bytes": 1729,
-      "sha256": "d6c78070609524b4d27a72b1780b29ed5e7d972d5f142bfebfa4c40f95252f82"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR/XRGeneralSettingsPerBuildTarget.asset.meta",
-      "bytes": 189,
-      "sha256": "8abb5afb30c60f930766df99f3001d0a9af0ff3754ae55a7ad5f145132a181c6"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Assets/XR.meta",
-      "bytes": 172,
-      "sha256": "dc7f4b3a8ac8efb78e9398d36bd2b416c0e0e5c27186d7f0f30ececf2761c3ad"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Packages/manifest.json",
-      "bytes": 2138,
-      "sha256": "bab697e49d59e074db60749962d935f7ec0bd04fd5a42e04867b2acccac15e98"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/Packages/packages-lock.json",
-      "bytes": 15374,
-      "sha256": "a3ffb45ca1cf6472b07d1ebb6306a38484d387ef1cb8a01b371f7ff4d4c2a4b5"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/AudioManager.asset",
-      "bytes": 413,
-      "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/ClusterInputManager.asset",
-      "bytes": 114,
-      "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/DynamicsManager.asset",
-      "bytes": 1254,
-      "sha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/EditorBuildSettings.asset",
-      "bytes": 727,
-      "sha256": "3c8ef5c3415d0e01fb3b034bc50e4729f4e5fdc801655704ff20757c2baca598"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/EditorSettings.asset",
-      "bytes": 1585,
-      "sha256": "32d6a9be4c9aa9795a96bd951820a2d9be1bfefab82ed05a5db111af0863938f"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/GraphicsSettings.asset",
-      "bytes": 2615,
-      "sha256": "6736f33dc62c35b0e7a88e275242080bc7a1d94c91154d18fceb332b661a6bce"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/InputManager.asset",
-      "bytes": 9731,
-      "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/MemorySettings.asset",
-      "bytes": 1192,
-      "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/MultiplayerManager.asset",
-      "bytes": 157,
-      "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/NavMeshAreas.asset",
-      "bytes": 1308,
-      "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/PackageManagerSettings.asset",
-      "bytes": 1003,
-      "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/Physics2DSettings.asset",
-      "bytes": 2028,
-      "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/PresetManager.asset",
-      "bytes": 146,
-      "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/ProjectSettings.asset",
-      "bytes": 27380,
-      "sha256": "8349059edd0d412c2b8e1e5e5063edc7a383723e00036c35322adac748a8f808"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/ProjectVersion.txt",
-      "bytes": 85,
-      "sha256": "91b35566b263574c8a513eff3bba6d5d313482d752d961077b47ab5b3ff14981"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/QualitySettings.asset",
-      "bytes": 3662,
-      "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/SceneTemplateSettings.json",
-      "bytes": 3535,
-      "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/ShaderGraphSettings.asset",
-      "bytes": 556,
-      "sha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/TagManager.asset",
-      "bytes": 657,
-      "sha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/TimeManager.asset",
-      "bytes": 202,
-      "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/URPProjectSettings.asset",
-      "bytes": 461,
-      "sha256": "c317fe22b9488785c0611f0642429922e5d324430d929bffb41648130f30c218"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/UnityConnectSettings.asset",
-      "bytes": 1063,
-      "sha256": "98f142992d8a623501c99648e1b7363adca08b67bb50390b566df368d00bc9a0"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/VFXManager.asset",
-      "bytes": 308,
-      "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/VersionControlSettings.asset",
-      "bytes": 188,
-      "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071"
-    },
-    {
-      "path": "VR remote control/QuestControllerClient/ProjectSettings/XRSettings.asset",
-      "bytes": 158,
-      "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f"
-    },
-    {
-      "path": "VR remote control/ci/rd-tests.yml",
-      "bytes": 388,
-      "sha256": "2137be27ad7a16455e136781097d274b092e148ca13efd8383e4148e6f5e0d63"
-    },
-    {
-      "path": "docs/images/README.md",
-      "bytes": 713,
-      "sha256": "b14c5462066c96197cdc5ffacee38521f1c377413344e4e5432e6e1ae3d9fb65"
-    },
-    {
-      "path": "docs/images/rd-panel.png",
-      "bytes": 266135,
-      "sha256": "a259d8f08375d1bd3949ead61625fb7f0641fde1b06a442dff6b1c394bf8b88d"
-    },
-    {
-      "path": "docs/images/robostudio-banner.png",
-      "bytes": 107365,
-      "sha256": "4847a7381bcb5eb9f0623f6d840bd1a77a159dc8d25533d203b7f5a0ebd2c78b"
-    },
-    {
-      "path": "docs/images/robostudio-banner.svg",
-      "bytes": 4595,
-      "sha256": "3377c3453bc5fde317b817235edb83a3508773554a96800589a94c2a0cb94a60"
-    },
-    {
-      "path": "docs/images/rs-workbench.png",
-      "bytes": 264661,
-      "sha256": "97a3a77f2e6aa57211a8d3160572d2bec6c05dcf65b951b2b68cd2820a57e248"
-    },
-    {
-      "path": "docs/videos/robostudio-vr-full-workflow.mp4",
-      "bytes": 3097645,
-      "sha256": "7a198c72e0b4187435e2dd37b3ef5222ab2907a872e49c4c0a271c0f6dda090e"
-    },
-    {
-      "path": "docs/videos/README.md",
-      "bytes": 252,
-      "sha256": "2d65a75dfe69264c77321b7cb627ab6ba2cf37316927775963b39ff7e1eee36d"
-    },
-    {
-      "path": "docs/videos/video-manifest.json",
-      "bytes": 504,
-      "sha256": "edb0815294ca1d9041a23aeb77600285d2661e5be499676c3f840a2313b3a08c"
-    },
-    {
-      "path": "docs/images/full-workflow-poster.jpg",
-      "bytes": 35653,
-      "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
+      "path": "tools/install_s1_extensions.py",
+      "bytes": 2214,
+      "sha256": "f520a24bf088378cd15c88b8b2b76f821d7d65129fc2d7348458b2be0830e648"
     }
   ],
-  "totalBytes": 23202679,
+  "totalBytes": 23208432,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }

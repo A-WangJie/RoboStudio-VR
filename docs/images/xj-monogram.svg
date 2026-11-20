@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="72" viewBox="0 0 96 72" role="img" aria-labelledby="title"><title id="title">XJ — black sculpted monogram</title>
+<defs><linearGradient id="face" x1="0" y1="0" x2="0.7" y2="1"><stop stop-color="#555b63"/><stop offset=".38" stop-color="#16181c"/><stop offset="1" stop-color="#030405"/></linearGradient></defs>
+<ellipse cx="48" cy="62" rx="37" ry="5" fill="#000" opacity=".12"/>
+<g transform="translate(6 7) skewX(-10)">
+<path d="M9 8H23L31 22 40 8H54L38 31 51 54H37L29 39 19 54H5L22 31Z M57 8H86V20H78V40Q78 55 63 55H50V43H60Q64 43 64 39V20H57Z" transform="translate(0 5)" fill="#000" stroke="#000" stroke-width="2"/>
+<path d="M9 8H23L31 22 40 8H54L38 31 51 54H37L29 39 19 54H5L22 31Z M57 8H86V20H78V40Q78 55 63 55H50V43H60Q64 43 64 39V20H57Z" fill="url(#face)" stroke="#111318" stroke-width="1.2"/>
+<path d="M10 9H22M41 9H52M58 9H84M51 44H60" fill="none" stroke="#858b94" stroke-width="1.2" opacity=".8"/>
+</g></svg>
