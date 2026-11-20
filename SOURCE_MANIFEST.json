@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 8511,
-      "sha256": "707e90cdefa4fd57930d4fc853e18df5ac7a3475fecb6d348379f21d27c2b2c8"
+      "bytes": 9184,
+      "sha256": "7c77581e687514b8e352752ad68b8a2745d655c672f4531510b2335553f078c4"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -1751,9 +1751,29 @@
       "path": "docs/images/rs-workbench.png",
       "bytes": 264661,
       "sha256": "97a3a77f2e6aa57211a8d3160572d2bec6c05dcf65b951b2b68cd2820a57e248"
+    },
+    {
+      "path": "docs/videos/robostudio-vr-full-workflow.mp4",
+      "bytes": 3097645,
+      "sha256": "7a198c72e0b4187435e2dd37b3ef5222ab2907a872e49c4c0a271c0f6dda090e"
+    },
+    {
+      "path": "docs/videos/README.md",
+      "bytes": 252,
+      "sha256": "2d65a75dfe69264c77321b7cb627ab6ba2cf37316927775963b39ff7e1eee36d"
+    },
+    {
+      "path": "docs/videos/video-manifest.json",
+      "bytes": 504,
+      "sha256": "edb0815294ca1d9041a23aeb77600285d2661e5be499676c3f840a2313b3a08c"
+    },
+    {
+      "path": "docs/images/full-workflow-poster.jpg",
+      "bytes": 35653,
+      "sha256": "456a14b6719acb3eaf769b311939ad393d9928b43a995ac8218aa5e344cd7a87"
     }
   ],
-  "totalBytes": 20100431,
+  "totalBytes": 23235158,
   "modelsIncluded": false,
   "license": "MIT for original RS/RD code; third-party terms apply; S1 model redistribution rights pending verification"
 }

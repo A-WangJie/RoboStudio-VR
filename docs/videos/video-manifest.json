@@ -1,0 +1,14 @@
+{
+  "title": "RoboStudio-VR full workflow",
+  "duration_seconds": 34.272,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "resolution": [
+    720,
+    720
+  ],
+  "original_sha256": "a7ded462b6ebad7bc3ae8533568cb0a3d0405e739c2c1dfee68c7b4793ea33cb",
+  "published_sha256": "7a198c72e0b4187435e2dd37b3ef5222ab2907a872e49c4c0a271c0f6dda090e",
+  "processing": "Connection details covered in lower-left region from 2.5 to 11.3 seconds; H.264/AAC transcode; no temporal cuts",
+  "original_preserved": true
+}
